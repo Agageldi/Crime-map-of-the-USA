@@ -1,6 +1,16 @@
- //https://en.wikipedia.org/wiki/List_of_football_stadiums_in_Germany
+var basemap = document.getElementById("mapid")
+basemap.innerHTML = mySvg
+var basemap_svg = document.getElementById("basemap_svg")
+basemap_svg.style.width = "99%"
+basemap_svg.style.height = "99%"
+basemap_svg.style.margin = "0px" 
+basemap_svg.style.padding = "0px" 
+
+
+
+
  //How to change marker to icon in GeoJSON or is should we use normal marker. If so where we should integrate GeoJSON
- var mymap=L.map('mapid').setView([ 48.79228, 9],8);
+/* var mymap=L.map('mapid').setView([ 48.79228, 9],8);
 	
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -8,6 +18,7 @@
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoiYWdhZ2VsZGkiLCJhIjoiY2phbm5pcTRhM2ZpNDJxcnphbnk4bXhiaSJ9.4EoCP0AuZHTMY8pA0VO8Ew'
 }).addTo(mymap);
+*/
 /*
 	var geojsonPoint = [{
     "type": "Feature",
