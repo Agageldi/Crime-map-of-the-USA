@@ -1,3 +1,101 @@
+var GU_bool = 1
+var ev
+var cons,cons2
+
+
+
+function GUchange(e){
+var mySvg = mySvg_map
+if(e != null){
+	var tag = e.target.tagName
+	if(tag==="P" || tag ==="DIV")
+		GU_bool = (GU_bool+1)%3
+}
+
+
+
+// reference state for GU size
+var i=45
+var str = 'data.'+state[i]+'.'
+var leftAngles = [parseFloat(eval(str+'Murder')),parseFloat(eval(str+'Rape')),parseFloat(eval(str+'Robbery')),parseFloat(eval(str+'assault'))]
+	leftAngles.reverse()
+	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
+var rightAngles = [parseFloat(eval(str+'White')),parseFloat(eval(str+'Black')),parseFloat(eval(str+'Native')),parseFloat(eval(str+'Asian')),parseFloat(eval(str+'More'))]
+	rightAngles = checkboxFilter(rightAngles,document.getElementsByClassName("race_layer"))
+var sum = parseFloat(eval(str+'Total'))
+	Tvoilent = (leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])*sum/100000
+	
+	sum = rightAngles[0]+ rightAngles[1]+ rightAngles[2]+ rightAngles[3]+ rightAngles[4]
+	
+cons = 	Math.pow(parseFloat(eval(str+'R2017'))/Tvoilent,1/3)
+cons2 = Math.pow(parseFloat(eval(str+'Total'))/sum,1/3)
+
+
+
+
+// Looping throw states
+for(var i=0;i<state.length;i++){
+	switch(GU_bool){
+		case 0:
+			document.getElementById("crime_layers").style.height = "80px"
+			document.getElementById("race_layers").style.height = "100px"
+			break;
+		case 1:
+			document.getElementById("crime_layers").style.height = "80px"
+			document.getElementById("race_layers").style.height = "0px"
+			break;
+		case 2:
+			document.getElementById("crime_layers").style.height = "0px"
+			document.getElementById("race_layers").style.height = "0px"
+	}
+	var str = 'data.'+state[i]+'.'
+	var factor = 275
+	var graph = [0,parseFloat(eval(str+'R2016'))*factor,parseFloat(eval(str+'R2015'))*factor,parseFloat(eval(str+'R2014'))*factor,parseFloat(eval(str+'R2013'))*factor]
+	graph.reverse()
+	
+	var cls=parseFloat(eval(str+'class'))
+	var leftAngles = [parseFloat(eval(str+'Murder')),parseFloat(eval(str+'Rape')),parseFloat(eval(str+'Robbery')),parseFloat(eval(str+'assault'))]
+	leftAngles.reverse()
+	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
+	
+	var sum = parseFloat(eval(str+'Total'))
+	var rightAngles = [parseFloat(eval(str+'White')),parseFloat(eval(str+'Black')),parseFloat(eval(str+'Native')),parseFloat(eval(str+'Asian')),parseFloat(eval(str+'More'))]
+	rightAngles = checkboxFilter(rightAngles,document.getElementsByClassName("race_layer"))
+	
+	var offsetX = 0
+	var offsetY = 0
+	var pos = [parseFloat(eval(str+'svgX'))-offsetX,parseFloat(eval(str+'svgY'))-offsetY]
+	//console.log(leftAngles)
+	
+	var Tvoilent = parseFloat(eval(str+'R2017'))
+	
+	Tvoilent = (leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])*sum/100000
+	
+	sum = rightAngles[0]+ rightAngles[1]+ rightAngles[2]+ rightAngles[3]+ rightAngles[4]
+	
+
+	
+	// 1mm3 = 100 Voilent Crime
+	var f = Math.pow(1039/50*3/4/Math.PI,1/3)*594/21000*cons
+	r=Math.pow(Tvoilent/1039,1/3)*f*100*210/594
+	
+	// 1mm3 = 20 000 people
+	var f2 = Math.pow(579315/10000*3/4/Math.PI,1/3)*594/21000*cons2
+	r= Math.pow(sum/579315,1/3)*f2*100*210/594
+	
+	
+	if(GU_bool==0){
+		mySvg +=  generateSVG(state[i]+'_GU',leftAngles,rightAngles,cls,Math.pow(Tvoilent/1039,1/3)*f,Math.pow(sum/579315,1/3)*f2,pos);
+	}
+	else
+	if(GU_bool==1)
+		mySvg += generateSVG_simple(state[i]+'_GU',leftAngles,Math.pow(Tvoilent/1039,1/3)*f,pos)
+	mySvg += '\n'
+}
+//generateSVG(leftAngles,rightAngles,graph,1./3/7.86,pos);
+mySvg += '</svg>'
+graphlegend+= '</svg>'
+
 var basemap = document.getElementById("mapid")
 basemap.innerHTML = mySvg
 var basemap_svg = document.getElementById("basemap_svg")
@@ -5,133 +103,6 @@ basemap_svg.style.width = "99%"
 basemap_svg.style.height = "99%"
 basemap_svg.style.margin = "0px" 
 basemap_svg.style.padding = "0px" 
-
-
-
-
- //How to change marker to icon in GeoJSON or is should we use normal marker. If so where we should integrate GeoJSON
-/* var mymap=L.map('mapid').setView([ 48.79228, 9],8);
-	
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoiYWdhZ2VsZGkiLCJhIjoiY2phbm5pcTRhM2ZpNDJxcnphbnk4bXhiaSJ9.4EoCP0AuZHTMY8pA0VO8Ew'
-}).addTo(mymap);
-*/
-/*
-	var geojsonPoint = [{
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!",
-		"show_on_map": true
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [ 9.23205, 48.79228]
-    }
-	},{
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!",
-		"show_on_map": true
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [8.8877, 49.2380]
-    }
-	},{
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!",
-		"show_on_map": true
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [8.41312, 49.02010]
-    }
-	},{
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!",
-		"show_on_map": true
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [8.50252, 49.47949]
-    }
-	},{
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "<img src= 's6.jpg' height=50 width=70 ><p><h1>Last Stadion</h1></p> <p><b>Year Formed</b>: 1987</p><p><a href= 'https://en.wikipedia.org/wiki/Westfalenstadion' target='_blank'> Link... </a><p>.",
-		"show_on_map": true
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [7.89298, 47.98898]
-    }
-	},
-	];
-	
-	var myPointMarker = {   // Marker of leaflet NOT GeoJSON
-		color: "red",
-		fillColor: "black",
-		radius: 8,
-		weight: 1,
-		opacity: 1,
-		fillOpacity: 0.8
-	}
-/*	
-	var StadionIcon = new L.Icon({
-	iconUrl: 'stadiumIcon.png',
-    
-	iconSize:     [30, 25], // size of the icon
-    iconAnchor:   [0, 10], // point of the icon which will correspond to marker's location
-    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-	
-	});
-	
-	function pointToLayer(feature, latlng){
-		return L.marker(latlng, {icon: StadionIcon});
-	};
-	
-	
-	
-	function onEachFeature(feature, layer){
-		if(feature.properties && feature.properties.popupContent)
-			layer.bindPopup(feature.properties.popupContent);
-	}
-	
-	function filter(feature, layer){
-		return feature.properties.show_on_map;
-	}
-	
-	
-	
-	var myLayer = L.geoJSON(geojsonPoint,{
-		pointToLayer: pointToLayer
-		
-	,onEachFeature: onEachFeature, filter: filter}).addTo(mymap);
-	
-	
-	
-	
-function onMapClick1(e){
-//	alert("You clicked the map at " + e.latlng);
-	popup
-		.setLatLng(e.latlng)
-		.setContent("You clicked the map at "+ e.latlng.toString())
-		.openOn(mymap);
 }
 
-mymap.on('click',onMapClick1)*/
+GUchange(null)

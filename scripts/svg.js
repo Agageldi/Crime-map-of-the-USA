@@ -1,4 +1,4 @@
-var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
@@ -22,8 +22,21 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata2268"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs2266" /><sodipodi:namedview
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs2266"><clipPath
+     id="SVGID_292_-0"><use
+       xlink:href="#SVGID_291_-8"
+       style="overflow:visible"
+       id="use2218-9"
+       x="0"
+       y="0"
+       width="100%"
+       height="100%" /></clipPath><rect
+     id="SVGID_291_-8"
+     x="-0.5"
+     y="0.5"
+     width="842.29999"
+     height="595.5" /></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -36,7 +49,16 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    inkscape:window-height="705"
    id="namedview2264"
    showgrid="false"
-   borderlayer="true"/>
+   borderlayer="true"
+   inkscape:zoom="1.072"
+   inkscape:cx="325"
+   inkscape:cy="175.37313"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="basemap_svg"
+   inkscape:measure-start="0,0"
+   inkscape:measure-end="0,0" />
 <style
    type="text/css"
    id="style2">
@@ -2012,1929 +2034,7 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    id="Labels">
 		<g
    id="USA_x5F_1_x5F_50m_x5F_2_-_Default">
-			<g
-   id="g1461">
-				<g
-   id="g707">
-					<g
-   id="g705">
-						<g
-   id="g703">
-							<defs
-   id="defs694">
-								<rect
-   id="SVGID_99_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_100_">
-								<use
-   xlink:href="#SVGID_99_"
-   style="overflow:visible"
-   id="use696"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st49"
-   clip-path="url(#SVGID_100_)"
-   id="g701">
-								<text
-   transform="translate(309.9883,385.4922)"
-   class="st50 st51"
-   id="text699"
-   style="font-size:6.96120024px;font-family:ArialMT">TX</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g723">
-					<g
-   id="g721">
-						<g
-   id="g719">
-							<defs
-   id="defs710">
-								<rect
-   id="SVGID_101_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_102_">
-								<use
-   xlink:href="#SVGID_101_"
-   style="overflow:visible"
-   id="use712"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st52"
-   clip-path="url(#SVGID_102_)"
-   id="g717">
-								<text
-   transform="translate(75.0781,257.0703)"
-   class="st50 st51"
-   id="text715"
-   style="font-size:6.96120024px;font-family:ArialMT">CA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g739">
-					<g
-   id="g737">
-						<g
-   id="g735">
-							<defs
-   id="defs726">
-								<rect
-   id="SVGID_103_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_104_">
-								<use
-   xlink:href="#SVGID_103_"
-   style="overflow:visible"
-   id="use728"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st53"
-   clip-path="url(#SVGID_104_)"
-   id="g733">
-								<text
-   transform="translate(222.9922,116.4063)"
-   class="st50 st51"
-   id="text731"
-   style="font-size:6.96120024px;font-family:ArialMT">MT</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g755">
-					<g
-   id="g753">
-						<g
-   id="g751">
-							<defs
-   id="defs742">
-								<rect
-   id="SVGID_105_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_106_">
-								<use
-   xlink:href="#SVGID_105_"
-   style="overflow:visible"
-   id="use744"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st54"
-   clip-path="url(#SVGID_106_)"
-   id="g749">
-								<text
-   transform="translate(162.8398,325.7227)"
-   class="st50 st51"
-   id="text747"
-   style="font-size:6.96120024px;font-family:ArialMT">AZ</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g771">
-					<g
-   id="g769">
-						<g
-   id="g767">
-							<defs
-   id="defs758">
-								<rect
-   id="SVGID_107_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_108_">
-								<use
-   xlink:href="#SVGID_107_"
-   style="overflow:visible"
-   id="use760"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st55"
-   clip-path="url(#SVGID_108_)"
-   id="g765">
-								<text
-   transform="translate(479.7969,157.6914)"
-   class="st50 st51"
-   id="text763"
-   style="font-size:6.96120024px;font-family:ArialMT">MI</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g787">
-					<g
-   id="g785">
-						<g
-   id="g783">
-							<defs
-   id="defs774">
-								<rect
-   id="SVGID_109_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_110_">
-								<use
-   xlink:href="#SVGID_109_"
-   style="overflow:visible"
-   id="use776"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st56"
-   clip-path="url(#SVGID_110_)"
-   id="g781">
-								<text
-   transform="translate(157.8047,152.4102)"
-   class="st50 st51"
-   id="text779"
-   style="font-size:6.96120024px;font-family:ArialMT">ID</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g803">
-					<g
-   id="g801">
-						<g
-   id="g799">
-							<defs
-   id="defs790">
-								<rect
-   id="SVGID_111_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_112_">
-								<use
-   xlink:href="#SVGID_111_"
-   style="overflow:visible"
-   id="use792"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st57"
-   clip-path="url(#SVGID_112_)"
-   id="g797">
-								<text
-   transform="translate(118.5234,229.9453)"
-   class="st50 st51"
-   id="text795"
-   style="font-size:6.96120024px;font-family:ArialMT">NV</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g819">
-					<g
-   id="g817">
-						<g
-   id="g815">
-							<defs
-   id="defs806">
-								<rect
-   id="SVGID_113_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_114_">
-								<use
-   xlink:href="#SVGID_113_"
-   style="overflow:visible"
-   id="use808"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st58"
-   clip-path="url(#SVGID_114_)"
-   id="g813">
-								<text
-   transform="translate(232.207,331.0039)"
-   class="st50 st51"
-   id="text811"
-   style="font-size:6.96120024px;font-family:ArialMT">NM</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g835">
-					<g
-   id="g833">
-						<g
-   id="g831">
-							<defs
-   id="defs822">
-								<rect
-   id="SVGID_115_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_116_">
-								<use
-   xlink:href="#SVGID_115_"
-   style="overflow:visible"
-   id="use824"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st59"
-   clip-path="url(#SVGID_116_)"
-   id="g829">
-								<text
-   transform="translate(433.2344,242.668)"
-   class="st50 st51"
-   id="text827"
-   style="font-size:6.96120024px;font-family:ArialMT">IL</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g851">
-					<g
-   id="g849">
-						<g
-   id="g847">
-							<defs
-   id="defs838">
-								<rect
-   id="SVGID_117_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_118_">
-								<use
-   xlink:href="#SVGID_117_"
-   style="overflow:visible"
-   id="use840"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st60"
-   clip-path="url(#SVGID_118_)"
-   id="g845">
-								<text
-   transform="translate(246.082,255.3906)"
-   class="st50 st51"
-   id="text843"
-   style="font-size:6.96120024px;font-family:ArialMT">CO</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g867">
-					<g
-   id="g865">
-						<g
-   id="g863">
-							<defs
-   id="defs854">
-								<rect
-   id="SVGID_119_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_120_">
-								<use
-   xlink:href="#SVGID_119_"
-   style="overflow:visible"
-   id="use856"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st61"
-   clip-path="url(#SVGID_120_)"
-   id="g861">
-								<text
-   transform="translate(94.6172,147.1289)"
-   class="st50 st51"
-   id="text859"
-   style="font-size:6.96120024px;font-family:ArialMT">OR</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g883">
-					<g
-   id="g881">
-						<g
-   id="g879">
-							<defs
-   id="defs870">
-								<rect
-   id="SVGID_121_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_122_">
-								<use
-   xlink:href="#SVGID_121_"
-   style="overflow:visible"
-   id="use872"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st62"
-   clip-path="url(#SVGID_122_)"
-   id="g877">
-								<text
-   transform="translate(178.7305,241.4688)"
-   class="st50 st51"
-   id="text875"
-   style="font-size:6.96120024px;font-family:ArialMT">UT</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g899">
-					<g
-   id="g897">
-						<g
-   id="g895">
-							<defs
-   id="defs886">
-								<rect
-   id="SVGID_123_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_124_">
-								<use
-   xlink:href="#SVGID_123_"
-   style="overflow:visible"
-   id="use888"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st63"
-   clip-path="url(#SVGID_124_)"
-   id="g893">
-								<text
-   transform="translate(329.9531,269.0703)"
-   class="st50 st51"
-   id="text891"
-   style="font-size:6.96120024px;font-family:ArialMT">KS</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g915">
-					<g
-   id="g913">
-						<g
-   id="g911">
-							<defs
-   id="defs902">
-								<rect
-   id="SVGID_125_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_126_">
-								<use
-   xlink:href="#SVGID_125_"
-   style="overflow:visible"
-   id="use904"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st64"
-   clip-path="url(#SVGID_126_)"
-   id="g909">
-								<text
-   transform="translate(230.8125,186.2578)"
-   class="st50 st51"
-   id="text907"
-   style="font-size:6.96120024px;font-family:ArialMT">WY</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g931">
-					<g
-   id="g929">
-						<g
-   id="g927">
-							<defs
-   id="defs918">
-								<rect
-   id="SVGID_127_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_128_">
-								<use
-   xlink:href="#SVGID_127_"
-   style="overflow:visible"
-   id="use920"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st65"
-   clip-path="url(#SVGID_128_)"
-   id="g925">
-								<text
-   transform="translate(389.3984,209.7813)"
-   class="st50 st51"
-   id="text923"
-   style="font-size:6.96120024px;font-family:ArialMT">IA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g947">
-					<g
-   id="g945">
-						<g
-   id="g943">
-							<defs
-   id="defs934">
-								<rect
-   id="SVGID_129_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_130_">
-								<use
-   xlink:href="#SVGID_129_"
-   style="overflow:visible"
-   id="use936"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st66"
-   clip-path="url(#SVGID_130_)"
-   id="g941">
-								<text
-   transform="translate(311.7617,168.9727)"
-   class="st50 st51"
-   id="text939"
-   style="font-size:6.96120024px;font-family:ArialMT">SD</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g963">
-					<g
-   id="g961">
-						<g
-   id="g959">
-							<defs
-   id="defs950">
-								<rect
-   id="SVGID_131_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_132_">
-								<use
-   xlink:href="#SVGID_131_"
-   style="overflow:visible"
-   id="use952"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st67"
-   clip-path="url(#SVGID_132_)"
-   id="g957">
-								<text
-   transform="translate(372.1523,138.7305)"
-   class="st50 st51"
-   id="text955"
-   style="font-size:6.96120024px;font-family:ArialMT">MN</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g979">
-					<g
-   id="g977">
-						<g
-   id="g975">
-							<defs
-   id="defs966">
-								<rect
-   id="SVGID_133_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_134_">
-								<use
-   xlink:href="#SVGID_133_"
-   style="overflow:visible"
-   id="use968"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st68"
-   clip-path="url(#SVGID_134_)"
-   id="g973">
-								<text
-   transform="translate(311.5195,218.4219)"
-   class="st50 st51"
-   id="text971"
-   style="font-size:6.96120024px;font-family:ArialMT">NE</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g995">
-					<g
-   id="g993">
-						<g
-   id="g991">
-							<defs
-   id="defs982">
-								<rect
-   id="SVGID_135_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_136_">
-								<use
-   xlink:href="#SVGID_135_"
-   style="overflow:visible"
-   id="use984"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st69"
-   clip-path="url(#SVGID_136_)"
-   id="g989">
-								<text
-   transform="translate(425.1641,164.8945)"
-   class="st50 st51"
-   id="text987"
-   style="font-size:6.96120024px;font-family:ArialMT">WI</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1011">
-					<g
-   id="g1009">
-						<g
-   id="g1007">
-							<defs
-   id="defs998">
-								<rect
-   id="SVGID_137_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_138_">
-								<use
-   xlink:href="#SVGID_137_"
-   style="overflow:visible"
-   id="use1000"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st70"
-   clip-path="url(#SVGID_138_)"
-   id="g1005">
-								<text
-   transform="translate(341.332,317.8008)"
-   class="st50 st51"
-   id="text1003"
-   style="font-size:6.96120024px;font-family:ArialMT">OK</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1027">
-					<g
-   id="g1025">
-						<g
-   id="g1023">
-							<defs
-   id="defs1014">
-								<rect
-   id="SVGID_139_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_140_">
-								<use
-   xlink:href="#SVGID_139_"
-   style="overflow:visible"
-   id="use1016"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st71"
-   clip-path="url(#SVGID_140_)"
-   id="g1021">
-								<text
-   transform="translate(311.5664,118.5664)"
-   class="st50 st51"
-   id="text1019"
-   style="font-size:6.96120024px;font-family:ArialMT">ND</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1043">
-					<g
-   id="g1041">
-						<g
-   id="g1039">
-							<defs
-   id="defs1030">
-								<rect
-   id="SVGID_141_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_142_">
-								<use
-   xlink:href="#SVGID_141_"
-   style="overflow:visible"
-   id="use1032"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st72"
-   clip-path="url(#SVGID_142_)"
-   id="g1037">
-								<text
-   transform="translate(548.0156,419.5781)"
-   class="st50 st51"
-   id="text1035"
-   style="font-size:6.96120024px;font-family:ArialMT">FL</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1059">
-					<g
-   id="g1057">
-						<g
-   id="g1055">
-							<defs
-   id="defs1046">
-								<rect
-   id="SVGID_143_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_144_">
-								<use
-   xlink:href="#SVGID_143_"
-   style="overflow:visible"
-   id="use1048"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st73"
-   clip-path="url(#SVGID_144_)"
-   id="g1053">
-								<text
-   transform="translate(397.4023,271.2305)"
-   class="st50 st51"
-   id="text1051"
-   style="font-size:6.96120024px;font-family:ArialMT">MO</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1075">
-					<g
-   id="g1073">
-						<g
-   id="g1071">
-							<defs
-   id="defs1062">
-								<rect
-   id="SVGID_145_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_146_">
-								<use
-   xlink:href="#SVGID_145_"
-   style="overflow:visible"
-   id="use1064"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st74"
-   clip-path="url(#SVGID_146_)"
-   id="g1069">
-								<text
-   transform="translate(119.9141,88.8008)"
-   class="st50 st51"
-   id="text1067"
-   style="font-size:6.96120024px;font-family:ArialMT">WA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1091">
-					<g
-   id="g1089">
-						<g
-   id="g1087">
-							<defs
-   id="defs1078">
-								<rect
-   id="SVGID_147_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_148_">
-								<use
-   xlink:href="#SVGID_147_"
-   style="overflow:visible"
-   id="use1080"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st75"
-   clip-path="url(#SVGID_148_)"
-   id="g1085">
-								<text
-   transform="translate(473.6445,355.4883)"
-   class="st50 st51"
-   id="text1083"
-   style="font-size:6.96120024px;font-family:ArialMT">AL</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1107">
-					<g
-   id="g1105">
-						<g
-   id="g1103">
-							<defs
-   id="defs1094">
-								<rect
-   id="SVGID_149_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_150_">
-								<use
-   xlink:href="#SVGID_149_"
-   style="overflow:visible"
-   id="use1096"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st76"
-   clip-path="url(#SVGID_150_)"
-   id="g1101">
-								<text
-   transform="translate(518.4844,356.9258)"
-   class="st50 st51"
-   id="text1099"
-   style="font-size:6.96120024px;font-family:ArialMT">GA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1123">
-					<g
-   id="g1121">
-						<g
-   id="g1119">
-							<defs
-   id="defs1110">
-								<rect
-   id="SVGID_151_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_152_">
-								<use
-   xlink:href="#SVGID_151_"
-   style="overflow:visible"
-   id="use1112"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st77"
-   clip-path="url(#SVGID_152_)"
-   id="g1117">
-								<text
-   transform="translate(399.8555,328.8438)"
-   class="st50 st51"
-   id="text1115"
-   style="font-size:6.96120024px;font-family:ArialMT">AR</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1139">
-					<g
-   id="g1137">
-						<g
-   id="g1135">
-							<defs
-   id="defs1126">
-								<rect
-   id="SVGID_153_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_154_">
-								<use
-   xlink:href="#SVGID_153_"
-   style="overflow:visible"
-   id="use1128"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st78"
-   clip-path="url(#SVGID_154_)"
-   id="g1133">
-								<text
-   transform="translate(401.6328,391.7344)"
-   class="st50 st51"
-   id="text1131"
-   style="font-size:6.96120024px;font-family:ArialMT">LA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1155">
-					<g
-   id="g1153">
-						<g
-   id="g1151">
-							<defs
-   id="defs1142">
-								<rect
-   id="SVGID_155_"
-   x="24.700001"
-   y="30.200001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_156_">
-								<use
-   xlink:href="#SVGID_155_"
-   style="overflow:visible"
-   id="use1144"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st79"
-   clip-path="url(#SVGID_156_)"
-   id="g1149">
-								<text
-   transform="translate(590.6622,172.4657)"
-   class="st50 st51"
-   id="text1147"
-   style="font-size:6.96120024px;font-family:ArialMT">NY</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1171">
-					<g
-   id="g1169">
-						<g
-   id="g1167">
-							<defs
-   id="defs1158">
-								<rect
-   id="SVGID_157_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_158_">
-								<use
-   xlink:href="#SVGID_157_"
-   style="overflow:visible"
-   id="use1160"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st80"
-   clip-path="url(#SVGID_158_)"
-   id="g1165">
-								<text
-   transform="translate(470.3438,240.9883)"
-   class="st50 st51"
-   id="text1163"
-   style="font-size:6.96120024px;font-family:ArialMT">IN</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1187">
-					<g
-   id="g1185">
-						<g
-   id="g1183">
-							<defs
-   id="defs1174">
-								<rect
-   id="SVGID_159_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_160_">
-								<use
-   xlink:href="#SVGID_159_"
-   style="overflow:visible"
-   id="use1176"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st81"
-   clip-path="url(#SVGID_160_)"
-   id="g1181">
-								<text
-   transform="translate(559.9141,210.5)"
-   class="st50 st51"
-   id="text1179"
-   style="font-size:6.96120024px;font-family:ArialMT">PA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1203">
-					<g
-   id="g1201">
-						<g
-   id="g1199">
-							<defs
-   id="defs1190">
-								<rect
-   id="SVGID_161_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_162_">
-								<use
-   xlink:href="#SVGID_161_"
-   style="overflow:visible"
-   id="use1192"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st82"
-   clip-path="url(#SVGID_162_)"
-   id="g1197">
-								<text
-   transform="translate(555.6914,299.3164)"
-   class="st50 st51"
-   id="text1195"
-   style="font-size:6.96120024px;font-family:ArialMT">NC</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1219">
-					<g
-   id="g1217">
-						<g
-   id="g1215">
-							<defs
-   id="defs1206">
-								<rect
-   id="SVGID_163_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_164_">
-								<use
-   xlink:href="#SVGID_163_"
-   style="overflow:visible"
-   id="use1208"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st83"
-   clip-path="url(#SVGID_164_)"
-   id="g1213">
-								<text
-   transform="translate(468.7031,308.4375)"
-   class="st50 st51"
-   id="text1211"
-   style="font-size:6.96120024px;font-family:ArialMT">TN</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1235">
-					<g
-   id="g1233">
-						<g
-   id="g1231">
-							<defs
-   id="defs1222">
-								<rect
-   id="SVGID_165_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_166_">
-								<use
-   xlink:href="#SVGID_165_"
-   style="overflow:visible"
-   id="use1224"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st84"
-   clip-path="url(#SVGID_166_)"
-   id="g1229">
-								<text
-   transform="translate(435.7148,358.3672)"
-   class="st50 st51"
-   id="text1227"
-   style="font-size:6.96120024px;font-family:ArialMT">MS</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1251">
-					<g
-   id="g1249">
-						<g
-   id="g1247">
-							<defs
-   id="defs1238">
-								<rect
-   id="SVGID_167_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_168_">
-								<use
-   xlink:href="#SVGID_167_"
-   style="overflow:visible"
-   id="use1240"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st85"
-   clip-path="url(#SVGID_168_)"
-   id="g1245">
-								<text
-   transform="translate(506.0469,226.1055)"
-   class="st50 st51"
-   id="text1243"
-   style="font-size:6.96120024px;font-family:ArialMT">OH</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1267">
-					<g
-   id="g1265">
-						<g
-   id="g1263">
-							<defs
-   id="defs1254">
-								<rect
-   id="SVGID_169_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_170_">
-								<use
-   xlink:href="#SVGID_169_"
-   style="overflow:visible"
-   id="use1256"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st86"
-   clip-path="url(#SVGID_170_)"
-   id="g1261">
-								<text
-   transform="translate(560.6367,267.6328)"
-   class="st50 st51"
-   id="text1259"
-   style="font-size:6.96120024px;font-family:ArialMT">VA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1283">
-					<g
-   id="g1281">
-						<g
-   id="g1279">
-							<defs
-   id="defs1270">
-								<rect
-   id="SVGID_171_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_172_">
-								<use
-   xlink:href="#SVGID_171_"
-   style="overflow:visible"
-   id="use1272"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st87"
-   clip-path="url(#SVGID_172_)"
-   id="g1277">
-								<text
-   transform="translate(491.5039,278.6719)"
-   class="st50 st51"
-   id="text1275"
-   style="font-size:6.96120024px;font-family:ArialMT">KY</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1299">
-					<g
-   id="g1297">
-						<g
-   id="g1295">
-							<defs
-   id="defs1286">
-								<rect
-   id="SVGID_173_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_174_">
-								<use
-   xlink:href="#SVGID_173_"
-   style="overflow:visible"
-   id="use1288"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st88"
-   clip-path="url(#SVGID_174_)"
-   id="g1293">
-								<text
-   transform="translate(546.5234,330.7617)"
-   class="st50 st51"
-   id="text1291"
-   style="font-size:6.96120024px;font-family:ArialMT">SC</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1315">
-					<g
-   id="g1313">
-						<g
-   id="g1311">
-							<defs
-   id="defs1302">
-								<rect
-   id="SVGID_175_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_176_">
-								<use
-   xlink:href="#SVGID_175_"
-   style="overflow:visible"
-   id="use1304"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st89"
-   clip-path="url(#SVGID_176_)"
-   id="g1309">
-								<text
-   transform="translate(634.9531,115.4453)"
-   class="st50 st51"
-   id="text1307"
-   style="font-size:6.96120024px;font-family:ArialMT">ME</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1331">
-					<g
-   id="g1329">
-						<g
-   id="g1327">
-							<defs
-   id="defs1318">
-								<rect
-   id="SVGID_177_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_178_">
-								<use
-   xlink:href="#SVGID_177_"
-   style="overflow:visible"
-   id="use1320"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st90"
-   clip-path="url(#SVGID_178_)"
-   id="g1325">
-								<text
-   transform="translate(532.3086,252.75)"
-   class="st50 st51"
-   id="text1323"
-   style="font-size:6.96120024px;font-family:ArialMT">WV</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1347">
-					<g
-   id="g1345">
-						<g
-   id="g1343">
-							<defs
-   id="defs1334">
-								<rect
-   id="SVGID_179_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_180_">
-								<use
-   xlink:href="#SVGID_179_"
-   style="overflow:visible"
-   id="use1336"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st91"
-   clip-path="url(#SVGID_180_)"
-   id="g1341">
-								<text
-   transform="translate(603.0781,145.9297)"
-   class="st50 st51"
-   id="text1339"
-   style="font-size:6.96120024px;font-family:ArialMT">VT</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1363">
-					<g
-   id="g1361">
-						<g
-   id="g1359">
-							<defs
-   id="defs1350">
-								<rect
-   id="SVGID_181_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_182_">
-								<use
-   xlink:href="#SVGID_181_"
-   style="overflow:visible"
-   id="use1352"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st92"
-   clip-path="url(#SVGID_182_)"
-   id="g1357">
-								<text
-   transform="translate(615.7031,149.7695)"
-   class="st50 st51"
-   id="text1355"
-   style="font-size:6.96120024px;font-family:ArialMT">NH</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1379">
-					<g
-   id="g1377">
-						<g
-   id="g1375">
-							<defs
-   id="defs1366">
-								<rect
-   id="SVGID_183_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_184_">
-								<use
-   xlink:href="#SVGID_183_"
-   style="overflow:visible"
-   id="use1368"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st93"
-   clip-path="url(#SVGID_184_)"
-   id="g1373">
-								<text
-   transform="translate(596.0703,204.0195)"
-   class="st50 st51"
-   id="text1371"
-   style="font-size:6.96120024px;font-family:ArialMT">NJ</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1395">
-					<g
-   id="g1393">
-						<g
-   id="g1391">
-							<defs
-   id="defs1382">
-								<rect
-   id="SVGID_185_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_186_">
-								<use
-   xlink:href="#SVGID_185_"
-   style="overflow:visible"
-   id="use1384"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st94"
-   clip-path="url(#SVGID_186_)"
-   id="g1389">
-								<text
-   transform="translate(617.4297,171.8555)"
-   class="st50 st51"
-   id="text1387"
-   style="font-size:6.96120024px;font-family:ArialMT">MA</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1411">
-					<g
-   id="g1409">
-						<g
-   id="g1407">
-							<defs
-   id="defs1398">
-								<rect
-   id="SVGID_187_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_188_">
-								<use
-   xlink:href="#SVGID_187_"
-   style="overflow:visible"
-   id="use1400"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st95"
-   clip-path="url(#SVGID_188_)"
-   id="g1405">
-								<text
-   transform="translate(612.9688,185.7773)"
-   class="st50 st51"
-   id="text1403"
-   style="font-size:6.96120024px;font-family:ArialMT">CT</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1427">
-					<g
-   id="g1425">
-						<g
-   id="g1423">
-							<defs
-   id="defs1414">
-								<rect
-   id="SVGID_189_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_190_">
-								<use
-   xlink:href="#SVGID_189_"
-   style="overflow:visible"
-   id="use1416"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st96"
-   clip-path="url(#SVGID_190_)"
-   id="g1421">
-								<text
-   transform="translate(574.75,234.0273)"
-   class="st50 st51"
-   id="text1419"
-   style="font-size:6.96120024px;font-family:ArialMT">MD</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1443">
-					<g
-   id="g1441">
-						<g
-   id="g1439">
-							<defs
-   id="defs1430">
-								<rect
-   id="SVGID_191_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_192_">
-								<use
-   xlink:href="#SVGID_191_"
-   style="overflow:visible"
-   id="use1432"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st97"
-   clip-path="url(#SVGID_192_)"
-   id="g1437">
-								<text
-   transform="translate(592.3711,238.8281)"
-   class="st50 st51"
-   id="text1435"
-   style="font-size:6.96120024px;font-family:ArialMT">DE</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-				<g
-   id="g1459">
-					<g
-   id="g1457">
-						<g
-   id="g1455">
-							<defs
-   id="defs1446">
-								<rect
-   id="SVGID_193_"
-   x="15.8"
-   y="20.700001"
-   width="677.59998"
-   height="551.40002" />
-							</defs>
-							<clipPath
-   id="SVGID_194_">
-								<use
-   xlink:href="#SVGID_193_"
-   style="overflow:visible"
-   id="use1448"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st98"
-   clip-path="url(#SVGID_194_)"
-   id="g1453">
-								<text
-   transform="translate(625.8906,181.457)"
-   class="st50 st51"
-   id="text1451"
-   style="font-size:6.96120024px;font-family:ArialMT">RI</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-			</g>
+			
 		</g>
 	</g>
 	<g
@@ -3951,7 +2051,7 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <g
    id="Aliaska"
-   transform="translate(0,-84.732394)">
+   transform="matrix(0.99335407,0,0,1.0000212,0.28683652,-85.490656)">
 	<g
    id="USA_x5F_1_x5F_50m_x5F_2_1_">
 		<g
@@ -3984,7 +2084,7 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 						</clipPath>
 						<polygon
    class="st122"
-   points="42,482.5 41.7,480.6 43.4,480.3 42.2,479.6 41.7,481.1 41,480.1 41.5,481.3 40.3,481.5 40.1,481.1 40.8,481.3 41.3,480.3 39.8,480.3 40.1,481.1 38.9,479.6 38.1,478.9 37.4,478.4 37.4,477.7 38.1,478.4 38.6,477.5 38.6,478.2 39.6,478.2 40.3,477.7 39.6,478.2 38.6,477.5 38.1,477.7 38.1,477.2 38.9,477.2 38.1,477 39.3,476.5 37.9,476 39.8,475.5 39.8,475.1 37.9,475.8 37.4,476.5 36.9,476 37.9,474.6 38.4,474.8 37.9,474.3 37.4,474.8 37.4,473.1 38.9,474.3 37.4,471.7 38.4,471 40.1,472.9 39.1,470.5 41,471.9 40.5,471 41.5,469.8 45.1,469.1 46.5,471 46.5,469.3 48.5,469.5 48.5,469.1 47.7,467.9 48.9,467.1 50.1,468.3 50.1,466.7 52.3,467.4 52.8,469.1 51.6,469.5 53,469.5 53,470.7 57.4,471 58.6,469.8 59,471 58.3,471 61.7,472.9 64.6,471.7 65.8,467.4 64.8,466.7 67.9,467.1 68.6,465.7 68.4,464.5 69.4,464.5 68.4,464.5 66.7,464.7 66.2,463.5 66.2,464 62.6,463.5 61,464.3 61.7,463.1 61.7,461.6 60.7,461.1 61.2,462.6 60.5,463.1 59.8,460.9 55.4,458.3 53,454.7 53,453.2 54.2,452.3 54,450.3 56.2,450.6 56.9,453.5 58.3,453.5 56.9,452.5 56.9,451.5 54,447.2 53.5,444.1 60.7,445.8 62.6,447.9 62.2,446.3 67.7,447.9 68.9,448.9 69.6,449.9 68.9,448.9 69.1,449.9 67.7,450.8 66.2,450.6 67,451.1 66.7,452.3 71,455.9 71.3,457.1 73.7,456.1 74.6,457.3 73.7,458 74.6,457.5 74.9,457.3 74.6,455.6 73,454.9 73.9,454.7 73.9,451.8 73.2,451.3 73.4,450.3 74.4,450.1 74.4,455.1 75.8,455.4 76.1,457.1 78.2,458.5 78.5,456.8 80.6,457.8 74.9,454.7 74.9,452.7 77,452 74.4,449.9 75.6,449.4 74.9,448.9 75.6,448.7 75.4,447.9 74.9,447.7 74.9,448.7 74.9,448.9 75.6,449.4 74.4,449.9 72,446.5 72.7,447.2 72.2,446 73.2,444.8 73.2,442.2 71.3,434.5 70.1,433.1 71.5,434 73.9,431.6 79,435.7 81.8,436.2 84,435.7 84.7,435.2 85,434.5 85.7,434.5 85.7,434 91,433.3 91.2,434.3 89.5,434 96.7,435.9 95.8,436.2 96.5,436.7 94.8,436.9 95.8,436.9 95.5,437.6 95.8,439.1 95.8,437.6 96.2,436.9 97.9,437.4 96.5,435.5 98.6,435.5 99.8,435.9 98.9,435.9 98.9,437.1 99.1,436.4 103,438.6 106.3,438.8 106.1,438.3 108,438.3 109.7,441.7 106.6,440.7 107.8,441.9 107,441.7 107.8,442.2 107.3,441.7 107.3,442.7 109.2,443.6 109.2,442.4 110.2,442.9 110.4,442.2 111.1,442.2 110.6,443.9 110.9,443.1 111.6,443.4 111.1,442.7 111.8,443.9 110.9,444.1 111.1,444.8 115.2,446.7 115.7,448.7 115.9,448.2 116.4,447.9 117.1,449.1 115.4,449.4 116.6,450.6 115,449.6 117.4,451.3 116.4,451.3 118.6,453 118.3,453.9 118.6,453 119.8,453.9 117.4,454.7 117.6,455.1 115.9,454.4 117.1,455.4 119.5,454.2 123.1,455.4 125.3,458.5 131.8,463.3 132.2,464.3 131.5,464 133.4,465.9 139,467.6 140.9,471.2 143.5,473.6 112.1,535.3 112.8,536 109.4,538.2 108.7,537.2 110.2,537.2 109.9,536.5 110.9,536 109.4,535.6 109.7,536.8 108.2,536.5 105.1,533.6 99.6,531.2 100.6,531.5 100.1,530.3 100.6,530 98.2,528.1 100.3,526 101.5,525.7 100.8,525.7 100.1,526 97.2,526.9 95.5,525 97.4,524.3 95,523.1 96.5,522.4 94.6,522.4 94.1,521.6 96.5,522.1 94.6,521.2 94.8,520 95.8,520.2 95.8,519.5 97.2,520.4 96,518.8 94.1,519.7 93.4,518.8 92.4,519.2 92.9,518.3 91.9,518.8 93.1,517.1 91.9,517.8 91.7,519 90.2,517.5 93.1,515.9 90.5,517.1 91,516.1 89.8,516.1 89.3,516.6 90.5,516.6 88.8,517.8 88.6,517.3 87.6,517.3 88.6,517.5 87.1,518 88.6,518 87.8,519 89,518.3 88.6,519.5 87.8,519.7 87.4,519 86.2,519.5 87.4,519.5 87.6,520.4 88.8,519.7 88.8,520.7 88.3,520.7 88.8,521.2 86.6,521.2 85.9,521.9 87.4,522.4 86.4,522.1 85,523.3 82.8,521.9 83.5,521.4 81.8,522.1 82.6,520.2 81.8,521.2 80.4,521.6 80.4,522.8 80.4,522.4 80.6,520.7 80.2,521.4 79.9,520.9 79.4,522.6 79,520.9 78.7,522.1 78.2,521.4 78,522.4 76.3,522.4 78,520.9 76.1,522.4 76.6,521.2 75.8,521.4 75.6,522.1 73.9,522.1 73.4,523.1 73.7,521.9 71,521.9 70.1,520.4 71.3,519.5 72.7,520.2 76.1,519.2 73.4,519.2 72.7,517.3 78.5,513.7 78.5,512 83.3,512 83.5,513.9 84.7,513.7 86.9,516.3 84.7,512 88.3,511.3 90.5,513.2 88.1,510.8 85.4,511.5 83.8,510.1 84.2,509.9 84.5,509.4 84.7,508.4 86.6,507.9 87.8,506.7 88.6,505.8 89.5,504.3 89.5,503.1 88.6,505.8 85.2,508.4 85.2,508.2 85.4,505.5 84.5,503.9 85.4,505.5 85.2,508.2 84.5,508.7 84.5,509.4 78.2,510.1 77.5,511.3 74.6,510.3 75.6,511.3 72.5,512.7 71.8,511.3 70.8,511.1 71.8,511.5 71.8,513.7 70.1,514.4 68.4,513.7 69.4,514.4 67.7,515.1 67.2,514.7 67.7,514.2 67.7,513.5 67,514.4 66.2,513.9 66.2,514.7 65.3,514.2 65.3,515.1 62.2,515.9 64.1,520 57.8,521.2 58.6,521.9 57.6,521.9 57.6,522.6 56.9,521.4 55.9,522.4 54.5,521.4 53.5,522.1 52.3,521.9 52.1,522.6 51.3,521.4 49.7,522.8 48.7,521.9 48.2,522.8 46.1,522.1 46.5,523.1 45.1,524 44.6,523.6 44.1,524.5 43.9,523.6 42.9,524.3 42.9,523.6 41,524.3 40.8,522.8 39.6,523.6 39.6,524.5 38.6,523.3 36.7,523.3 37.9,524 37.4,524.3 35.5,523.1 33.6,523.6 35.3,525.2 33.6,525 33.1,526 32.9,525.2 34.1,524.5 33.6,524 32.9,524.3 32.1,525.7 31.9,524.8 28.8,524.8 28.8,523.8 26.9,525.7 26.6,525 28.3,524 27.8,523.1 24.9,522.8 25.2,521.4 25.9,522.6 25.4,520.7 28.1,519 36,519 35.3,519.2 36.2,520.2 37.2,518.8 39.6,518 42.9,517.5 43.2,518.5 43.7,517.3 46.3,514.4 47.5,514.4 47.7,513 51.1,512 51.1,511.5 52.8,510.6 46.8,509.9 46.5,507.7 48.5,507 48.2,506.3 45.1,507.2 44.6,509.4 43.4,509.4 43.2,504.8 43.9,504.1 42,504.6 41.5,502.4 42.5,501.7 35,501.2 34.3,499.5 35.3,500.3 36.5,499.5 37.9,495.9 40.1,495.5 41.3,490.9 42.5,489.9 42,489.7 41.3,490.7 41.7,488.7 44.9,487.8 44.9,486.8 44.6,487.5 42.5,487.8 42.5,488.3 41,488.3 41.3,489.2 40.1,490.4 39.6,489.7 40.1,488.7 39.3,489.9 34.5,487.1 34.8,486.3 35.5,486.3 35,483.2 36,482.7 34.8,482.5 34.8,480.8 35.7,480.8 34.8,479.6 37.4,479.6 37.9,478.7 39.1,481.3 38.6,482 37.4,481.8 36.9,482 36.9,482.5 36.5,482.5 36.9,482.5 37.2,482 38.6,482 39.6,482 40.3,482.5 39.3,483.9 40.8,484.2 41.5,483 42,483.7 41,481.8 "
+   points="42.2,479.6 41.7,481.1 41,480.1 41.5,481.3 40.3,481.5 40.1,481.1 40.8,481.3 41.3,480.3 39.8,480.3 40.1,481.1 38.9,479.6 38.1,478.9 37.4,478.4 37.4,477.7 38.1,478.4 38.6,477.5 38.6,478.2 39.6,478.2 40.3,477.7 39.6,478.2 38.6,477.5 38.1,477.7 38.1,477.2 38.9,477.2 38.1,477 39.3,476.5 37.9,476 39.8,475.5 39.8,475.1 37.9,475.8 37.4,476.5 36.9,476 37.9,474.6 38.4,474.8 37.9,474.3 37.4,474.8 37.4,473.1 38.9,474.3 37.4,471.7 38.4,471 40.1,472.9 39.1,470.5 41,471.9 40.5,471 41.5,469.8 45.1,469.1 46.5,471 46.5,469.3 48.5,469.5 48.5,469.1 47.7,467.9 48.9,467.1 50.1,468.3 50.1,466.7 52.3,467.4 52.8,469.1 51.6,469.5 53,469.5 53,470.7 57.4,471 58.6,469.8 59,471 58.3,471 61.7,472.9 64.6,471.7 65.8,467.4 64.8,466.7 67.9,467.1 68.6,465.7 68.4,464.5 69.4,464.5 68.4,464.5 66.7,464.7 66.2,463.5 66.2,464 62.6,463.5 61,464.3 61.7,463.1 61.7,461.6 60.7,461.1 61.2,462.6 60.5,463.1 59.8,460.9 55.4,458.3 53,454.7 53,453.2 54.2,452.3 54,450.3 56.2,450.6 56.9,453.5 58.3,453.5 56.9,452.5 56.9,451.5 54,447.2 53.5,444.1 60.7,445.8 62.6,447.9 62.2,446.3 67.7,447.9 68.9,448.9 69.6,449.9 68.9,448.9 69.1,449.9 67.7,450.8 66.2,450.6 67,451.1 66.7,452.3 71,455.9 71.3,457.1 73.7,456.1 74.6,457.3 73.7,458 74.6,457.5 74.9,457.3 74.6,455.6 73,454.9 73.9,454.7 73.9,451.8 73.2,451.3 73.4,450.3 74.4,450.1 74.4,455.1 75.8,455.4 76.1,457.1 78.2,458.5 78.5,456.8 80.6,457.8 74.9,454.7 74.9,452.7 77,452 74.4,449.9 75.6,449.4 74.9,448.9 75.6,448.7 75.4,447.9 74.9,447.7 74.9,448.7 74.9,448.9 75.6,449.4 74.4,449.9 72,446.5 72.7,447.2 72.2,446 73.2,444.8 73.2,442.2 71.3,434.5 70.1,433.1 71.5,434 73.9,431.6 79,435.7 81.8,436.2 84,435.7 84.7,435.2 85,434.5 85.7,434.5 85.7,434 91,433.3 91.2,434.3 89.5,434 96.7,435.9 95.8,436.2 96.5,436.7 94.8,436.9 95.8,436.9 95.5,437.6 95.8,439.1 95.8,437.6 96.2,436.9 97.9,437.4 96.5,435.5 98.6,435.5 99.8,435.9 98.9,435.9 98.9,437.1 99.1,436.4 103,438.6 106.3,438.8 106.1,438.3 108,438.3 109.7,441.7 106.6,440.7 107.8,441.9 107,441.7 107.8,442.2 107.3,441.7 107.3,442.7 109.2,443.6 109.2,442.4 110.2,442.9 110.4,442.2 111.1,442.2 110.6,443.9 110.9,443.1 111.6,443.4 111.1,442.7 111.8,443.9 110.9,444.1 111.1,444.8 115.2,446.7 115.7,448.7 115.9,448.2 116.4,447.9 117.1,449.1 115.4,449.4 116.6,450.6 115,449.6 117.4,451.3 116.4,451.3 118.6,453 118.3,453.9 118.6,453 119.8,453.9 117.4,454.7 117.6,455.1 115.9,454.4 117.1,455.4 119.5,454.2 123.1,455.4 125.3,458.5 131.8,463.3 132.2,464.3 131.5,464 133.4,465.9 139,467.6 140.9,471.2 143.5,473.6 112.1,535.3 112.8,536 109.4,538.2 108.7,537.2 110.2,537.2 109.9,536.5 110.9,536 109.4,535.6 109.7,536.8 108.2,536.5 105.1,533.6 99.6,531.2 100.6,531.5 100.1,530.3 100.6,530 98.2,528.1 100.3,526 101.5,525.7 100.8,525.7 100.1,526 97.2,526.9 95.5,525 97.4,524.3 95,523.1 96.5,522.4 94.6,522.4 94.1,521.6 96.5,522.1 94.6,521.2 94.8,520 95.8,520.2 95.8,519.5 97.2,520.4 96,518.8 94.1,519.7 93.4,518.8 92.4,519.2 92.9,518.3 91.9,518.8 93.1,517.1 91.9,517.8 91.7,519 90.2,517.5 93.1,515.9 90.5,517.1 91,516.1 89.8,516.1 89.3,516.6 90.5,516.6 88.8,517.8 88.6,517.3 87.6,517.3 88.6,517.5 87.1,518 88.6,518 87.8,519 89,518.3 88.6,519.5 87.8,519.7 87.4,519 86.2,519.5 87.4,519.5 87.6,520.4 88.8,519.7 88.8,520.7 88.3,520.7 88.8,521.2 86.6,521.2 85.9,521.9 87.4,522.4 86.4,522.1 85,523.3 82.8,521.9 83.5,521.4 81.8,522.1 82.6,520.2 81.8,521.2 80.4,521.6 80.4,522.8 80.4,522.4 80.6,520.7 80.2,521.4 79.9,520.9 79.4,522.6 79,520.9 78.7,522.1 78.2,521.4 78,522.4 76.3,522.4 78,520.9 76.1,522.4 76.6,521.2 75.8,521.4 75.6,522.1 73.9,522.1 73.4,523.1 73.7,521.9 71,521.9 70.1,520.4 71.3,519.5 72.7,520.2 76.1,519.2 73.4,519.2 72.7,517.3 78.5,513.7 78.5,512 83.3,512 83.5,513.9 84.7,513.7 86.9,516.3 84.7,512 88.3,511.3 90.5,513.2 88.1,510.8 85.4,511.5 83.8,510.1 84.2,509.9 84.5,509.4 84.7,508.4 86.6,507.9 87.8,506.7 88.6,505.8 89.5,504.3 89.5,503.1 88.6,505.8 85.2,508.4 85.2,508.2 85.4,505.5 84.5,503.9 85.4,505.5 85.2,508.2 84.5,508.7 84.5,509.4 78.2,510.1 77.5,511.3 74.6,510.3 75.6,511.3 72.5,512.7 71.8,511.3 70.8,511.1 71.8,511.5 71.8,513.7 70.1,514.4 68.4,513.7 69.4,514.4 67.7,515.1 67.2,514.7 67.7,514.2 67.7,513.5 67,514.4 66.2,513.9 66.2,514.7 65.3,514.2 65.3,515.1 62.2,515.9 64.1,520 57.8,521.2 58.6,521.9 57.6,521.9 57.6,522.6 56.9,521.4 55.9,522.4 54.5,521.4 53.5,522.1 52.3,521.9 52.1,522.6 51.3,521.4 49.7,522.8 48.7,521.9 48.2,522.8 46.1,522.1 46.5,523.1 45.1,524 44.6,523.6 44.1,524.5 43.9,523.6 42.9,524.3 42.9,523.6 41,524.3 40.8,522.8 39.6,523.6 39.6,524.5 38.6,523.3 36.7,523.3 37.9,524 37.4,524.3 35.5,523.1 33.6,523.6 35.3,525.2 33.6,525 33.1,526 32.9,525.2 34.1,524.5 33.6,524 32.9,524.3 32.1,525.7 31.9,524.8 28.8,524.8 28.8,523.8 26.9,525.7 26.6,525 28.3,524 27.8,523.1 24.9,522.8 25.2,521.4 25.9,522.6 25.4,520.7 28.1,519 36,519 35.3,519.2 36.2,520.2 37.2,518.8 39.6,518 42.9,517.5 43.2,518.5 43.7,517.3 46.3,514.4 47.5,514.4 47.7,513 51.1,512 51.1,511.5 52.8,510.6 46.8,509.9 46.5,507.7 48.5,507 48.2,506.3 45.1,507.2 44.6,509.4 43.4,509.4 43.2,504.8 43.9,504.1 42,504.6 41.5,502.4 42.5,501.7 35,501.2 34.3,499.5 35.3,500.3 36.5,499.5 37.9,495.9 40.1,495.5 41.3,490.9 42.5,489.9 42,489.7 41.3,490.7 41.7,488.7 44.9,487.8 44.9,486.8 44.6,487.5 42.5,487.8 42.5,488.3 41,488.3 41.3,489.2 40.1,490.4 39.6,489.7 40.1,488.7 39.3,489.9 34.5,487.1 34.8,486.3 35.5,486.3 35,483.2 36,482.7 34.8,482.5 34.8,480.8 35.7,480.8 34.8,479.6 37.4,479.6 37.9,478.7 39.1,481.3 38.6,482 37.4,481.8 36.9,482 36.9,482.5 36.5,482.5 36.9,482.5 37.2,482 38.6,482 39.6,482 40.3,482.5 39.3,483.9 40.8,484.2 41.5,483 42,483.7 41,481.8 42,482.5 41.7,480.6 43.4,480.3 "
    clip-path="url(#SVGID_234_)"
    id="polygon1764"
    style="fill:#2e635e;stroke:#6e6e6e;stroke-width:0.48010001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
@@ -3993,55 +2093,7 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 	</g>
-	<g
-   id="Labels_1_">
-		<g
-   id="USA_x5F_1_x5F_50m_x5F_2_-_Default_1_">
-			<g
-   id="g1791">
-				<g
-   id="g1789">
-					<g
-   id="g1787">
-						<g
-   id="g1785">
-							<defs
-   id="defs1776">
-								<rect
-   id="SVGID_235_"
-   x="16.299999"
-   y="422"
-   width="144.3"
-   height="150.3" />
-							</defs>
-							<clipPath
-   id="SVGID_236_">
-								<use
-   xlink:href="#SVGID_235_"
-   style="overflow:visible"
-   id="use1778"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st123"
-   clip-path="url(#SVGID_236_)"
-   id="g1783">
-								<text
-   transform="translate(86.0703,486.5508)"
-   class="st50 st51"
-   id="text1781"
-   style="font-size:6.96120024px;font-family:ArialMT">AK</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-			</g>
-		</g>
-	</g>
+	
 	<g
    id="Other_3">
 		<g
@@ -4091,7 +2143,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    id="Scale"
    transform="translate(0,-84.732394)">
 	<g
-   id="g1869">
+   id="g1869"
+   transform="matrix(0.49943594,0,0,0.46169565,15.650488,304.51103)">
 		<g
    id="g1825">
 			<g
@@ -4248,7 +2301,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 	<g
    id="g2099">
 		<g
-   id="g1885">
+   id="g1885"
+   transform="translate(0.71352916,7.5735648)">
 			<g
    id="g1883">
 				<g
@@ -4281,14 +2335,18 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(28.9297,553.0781)"
    class="st50 st130"
    id="text1877"
-   style="font-size:9.84179974px;font-family:ArialMT">0</text>
+   style="font-size:9.84179974px;font-family:ArialMT"><tspan
+     style="font-size:5.33333349px"
+     id="tspan1232">0</tspan></text>
+
 
 					</g>
 				</g>
 			</g>
 		</g>
 		<g
-   id="g1901">
+   id="g1901"
+   transform="translate(3.3515459,7.5735648)">
 			<g
    id="g1899">
 				<g
@@ -4321,94 +2379,20 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(58.0156,553.0781)"
    class="st50 st130"
    id="text1893"
-   style="font-size:9.84179974px;font-family:ArialMT">500</text>
+   style="font-size:9.84179974px;font-family:ArialMT"><tspan
+     style="font-size:5.33333349px"
+     id="tspan1230">500 km</tspan></text>
+
 
 					</g>
 				</g>
 			</g>
 		</g>
+		
+		
 		<g
-   id="g1917">
-			<g
-   id="g1915">
-				<g
-   id="g1913">
-					<defs
-   id="defs1904">
-						<rect
-   id="SVGID_251_"
-   x="-0.5"
-   y="0.5"
-   width="842.29999"
-   height="595.5" />
-					</defs>
-					<clipPath
-   id="SVGID_252_">
-						<use
-   xlink:href="#SVGID_251_"
-   style="overflow:visible"
-   id="use1906"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-					</clipPath>
-					<g
-   class="st132"
-   clip-path="url(#SVGID_252_)"
-   id="g1911">
-						<text
-   transform="translate(90.0859,553.0781)"
-   class="st50 st130"
-   id="text1909"
-   style="font-size:9.84179974px;font-family:ArialMT">1000</text>
-
-					</g>
-				</g>
-			</g>
-		</g>
-		<g
-   id="g1933">
-			<g
-   id="g1931">
-				<g
-   id="g1929">
-					<defs
-   id="defs1920">
-						<rect
-   id="SVGID_253_"
-   x="-0.5"
-   y="0.5"
-   width="842.29999"
-   height="595.5" />
-					</defs>
-					<clipPath
-   id="SVGID_254_">
-						<use
-   xlink:href="#SVGID_253_"
-   style="overflow:visible"
-   id="use1922"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-					</clipPath>
-					<g
-   class="st133"
-   clip-path="url(#SVGID_254_)"
-   id="g1927">
-						<text
-   transform="translate(112.5547,553.0781)"
-   class="st50 st130"
-   id="text1925"
-   style="font-size:9.84179974px;font-family:ArialMT">km</text>
-
-					</g>
-				</g>
-			</g>
-		</g>
-		<g
-   id="g1947">
+   id="g1947"
+   transform="matrix(0.50232307,0,0,0.47372618,109.96173,296.09363)">
 			<g
    id="g1945">
 				<g
@@ -4446,7 +2430,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		<g
-   id="g1961">
+   id="g1961"
+   transform="matrix(0.50232307,0,0,0.47372618,109.96173,296.09363)">
 			<g
    id="g1959">
 				<g
@@ -4484,7 +2469,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		<g
-   id="g1975">
+   id="g1975"
+   transform="matrix(0.50232307,0,0,0.47372618,109.96173,296.09363)">
 			<g
    id="g1973">
 				<g
@@ -4522,7 +2508,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		<g
-   id="g1989">
+   id="g1989"
+   transform="matrix(0.50232307,0,0,0.47372618,109.96173,296.09363)">
 			<g
    id="g1987">
 				<g
@@ -4560,7 +2547,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		<g
-   id="g2003">
+   id="g2003"
+   transform="matrix(0.50232307,0,0,0.47372618,109.96173,296.09363)">
 			<g
    id="g2001">
 				<g
@@ -4598,7 +2586,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		<g
-   id="g2017">
+   id="g2017"
+   transform="matrix(0.50232307,0,0,0.47372618,109.96173,296.09363)">
 			<g
    id="g2015">
 				<g
@@ -4636,7 +2625,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		<g
-   id="g2033">
+   id="g2033"
+   transform="translate(0,4.2141648)">
 			<g
    id="g2031">
 				<g
@@ -4669,14 +2659,18 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(222.5781,556.4375)"
    class="st50 st141"
    id="text2025"
-   style="font-size:10.08180046px;font-family:ArialMT">0</text>
+   style="font-size:10.08180046px;font-family:ArialMT"><tspan
+     style="font-size:5.33333349px"
+     id="tspan1242">0</tspan></text>
+
 
 					</g>
 				</g>
 			</g>
 		</g>
 		<g
-   id="g2049">
+   id="g2049"
+   transform="translate(0,4.2141648)">
 			<g
    id="g2047">
 				<g
@@ -4709,54 +2703,19 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(287.7813,556.4375)"
    class="st50 st141"
    id="text2041"
-   style="font-size:10.08180046px;font-family:ArialMT">500</text>
+   style="font-size:10.08180046px;font-family:ArialMT"><tspan
+     style="font-size:5.33333349px"
+     id="tspan1246">500 km</tspan></text>
+
 
 					</g>
 				</g>
 			</g>
 		</g>
+		
 		<g
-   id="g2065">
-			<g
-   id="g2063">
-				<g
-   id="g2061">
-					<defs
-   id="defs2052">
-						<rect
-   id="SVGID_271_"
-   x="-0.5"
-   y="0.5"
-   width="842.29999"
-   height="595.5" />
-					</defs>
-					<clipPath
-   id="SVGID_272_">
-						<use
-   xlink:href="#SVGID_271_"
-   style="overflow:visible"
-   id="use2054"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-					</clipPath>
-					<g
-   class="st143"
-   clip-path="url(#SVGID_272_)"
-   id="g2059">
-						<text
-   transform="translate(354.6328,556.4375)"
-   class="st50 st141"
-   id="text2057"
-   style="font-size:10.08180046px;font-family:ArialMT">1,000</text>
-
-					</g>
-				</g>
-			</g>
-		</g>
-		<g
-   id="g2081">
+   id="g2081"
+   transform="translate(0,4.2141648)">
 			<g
    id="g2079">
 				<g
@@ -4789,57 +2748,21 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(252.4922,556.4375)"
    class="st50 st141"
    id="text2073"
-   style="font-size:10.08180046px;font-family:ArialMT">250</text>
+   style="font-size:10.08180046px;font-family:ArialMT"><tspan
+     style="font-size:5.33333349px"
+     id="tspan1244">250</tspan></text>
+
 
 					</g>
 				</g>
 			</g>
 		</g>
-		<g
-   id="g2097">
-			<g
-   id="g2095">
-				<g
-   id="g2093">
-					<defs
-   id="defs2084">
-						<rect
-   id="SVGID_275_"
-   x="-0.5"
-   y="0.5"
-   width="842.29999"
-   height="595.5" />
-					</defs>
-					<clipPath
-   id="SVGID_276_">
-						<use
-   xlink:href="#SVGID_275_"
-   style="overflow:visible"
-   id="use2086"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-					</clipPath>
-					<g
-   class="st145"
-   clip-path="url(#SVGID_276_)"
-   id="g2091">
-						<text
-   transform="translate(382.8516,556.4375)"
-   class="st50 st141"
-   id="text2089"
-   style="font-size:10.08180046px;font-family:ArialMT">km</text>
-
-					</g>
-				</g>
-			</g>
-		</g>
+		
 	</g>
 </g>
 <g
    id="Hawaii"
-   transform="translate(0,-84.732394)">
+   transform="matrix(0.98813963,0,0,1.0000539,0.78217523,-84.810914)">
 	<g
    id="USA_x5F_1_x5F_50m_x5F_2_2_">
 		<g
@@ -4882,55 +2805,7 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 	</g>
-	<g
-   id="Labels_2_">
-		<g
-   id="USA_x5F_1_x5F_50m_x5F_2_-_Default_2_">
-			<g
-   id="g2135">
-				<g
-   id="g2133">
-					<g
-   id="g2131">
-						<g
-   id="g2129">
-							<defs
-   id="defs2120">
-								<rect
-   id="SVGID_279_"
-   x="160.60001"
-   y="465.89999"
-   width="55"
-   height="105.6" />
-							</defs>
-							<clipPath
-   id="SVGID_280_">
-								<use
-   xlink:href="#SVGID_279_"
-   style="overflow:visible"
-   id="use2122"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-							</clipPath>
-							<g
-   class="st147"
-   clip-path="url(#SVGID_280_)"
-   id="g2127">
-								<text
-   transform="translate(189.0117,534.0781)"
-   class="st50 st51"
-   id="text2125"
-   style="font-size:6.96120024px;font-family:ArialMT">HI</text>
-
-							</g>
-						</g>
-					</g>
-				</g>
-			</g>
-		</g>
-	</g>
+	
 	<g
    id="Other_5">
 		<g
@@ -4980,7 +2855,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    id="Scale_x5F_Hawaii"
    transform="translate(0,-84.732394)">
 	<g
-   id="g2213">
+   id="g2213"
+   transform="matrix(0.50322546,0,0,0.47312382,82.548221,296.43649)">
 		<g
    id="g2169">
 			<g
@@ -5135,7 +3011,8 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 		</g>
 	</g>
 	<g
-   id="g2247">
+   id="g2247"
+   transform="translate(4.7879226,3.9797648)">
 		<g
    id="g2229">
 			<g
@@ -5170,104 +3047,45 @@ var mySvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(175.8828,556.6719)"
    class="st50 st130"
    id="text2221"
-   style="font-size:9.84179974px;font-family:ArialMT">500</text>
+   style="font-size:9.84179974px;font-family:ArialMT"><tspan
+     style="font-size:5.33333349px"
+     id="tspan1238">250 km</tspan></text>
+
 
 					</g>
 				</g>
 			</g>
 		</g>
-		<g
-   id="g2245">
-			<g
-   id="g2243">
-				<g
-   id="g2241">
-					<defs
-   id="defs2232">
-						<rect
-   id="SVGID_293_"
-   x="-0.5"
-   y="0.5"
-   width="842.29999"
-   height="595.5" />
-					</defs>
-					<clipPath
-   id="SVGID_294_">
-						<use
-   xlink:href="#SVGID_293_"
-   style="overflow:visible"
-   id="use2234"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-					</clipPath>
-					<g
-   class="st154"
-   clip-path="url(#SVGID_294_)"
-   id="g2239">
-						<text
-   transform="translate(195.6094,556.6719)"
-   class="st50 st130"
-   id="text2237"
-   style="font-size:9.84179974px;font-family:ArialMT">km</text>
-
-					</g>
-				</g>
-			</g>
-		</g>
+		
 	</g>
-</g>
 <g
-   id="arrows"
-   transform="translate(-32,-46.732394)">
-	<line
-   class="st166"
-   x1="634.29999"
-   y1="169"
-   x2="640.09998"
-   y2="163.2"
-   id="line2250"
-   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10" />
-	<line
-   class="st166"
-   x1="630.70001"
-   y1="180.7"
-   x2="657.70001"
-   y2="180.7"
-   id="line2252"
-   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10" />
-	<line
-   class="st166"
-   x1="624"
-   y1="187"
-   x2="628"
-   y2="191"
-   id="line2254"
-   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10" />
-	<line
-   class="st166"
-   x1="606.70001"
-   y1="211"
-   x2="615.20001"
-   y2="219.60001"
-   id="line2256"
-   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10" />
-	<line
-   class="st166"
-   x1="601.79999"
-   y1="240.2"
-   x2="639"
-   y2="253.39999"
-   id="line2258"
-   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10" />
-	<line
-   class="st166"
-   x1="587.09998"
-   y1="243.39999"
-   x2="610.40002"
-   y2="266.70001"
-   id="line2260"
-   style="fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10" />
-</g>
+   id="g2247-1"
+   transform="translate(-11.818562,3.9797648)"><g
+     id="g2229-3"><g
+       id="g2227-1"><g
+         id="g2225-9"><defs
+           id="defs2216-1"><rect
+             id="rect1297"
+             x="-0.5"
+             y="0.5"
+             width="842.29999"
+             height="595.5" /></defs><clipPath
+           id="clipPath1268"><use
+             xlink:href="#SVGID_291_-8"
+             style="overflow:visible"
+             id="use1266"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" /></clipPath><g
+           class="st153"
+           clip-path="url(#SVGID_292_)"
+           id="g2223-2"><text
+             transform="translate(175.8828,556.6719)"
+             class="st50 st130"
+             id="text2221-7"
+             style="font-size:9.84179974px;font-family:ArialMT"><tspan
+               style="font-size:5.33333349px"
+               id="tspan1238-1">0</tspan></text>
+</g></g></g></g></g></g>
 `
