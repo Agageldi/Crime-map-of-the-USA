@@ -1,7 +1,7 @@
 var GU_bool = 1
-var ev
 var cons,cons2
 var class_colors= ["#d8f2ed","#b6d6d1","#97bdb7","#79a39e","#5e8c86","#467872","#2e635e","#154f4a"] //from lightest to darkest or from smallest value to highest value
+
 
 
 function GUchange(e){
@@ -115,7 +115,6 @@ else
 	recolor(classificationValues_def);
 }
 
-GUchange(null)
 
 function recolor(values){
 	
@@ -130,4 +129,44 @@ function recolor(values){
 		
 		document.getElementById(state[i]).style.fill = class_colors[j-1]
 	}
+	
+	
+	var legend = document.getElementsByClassName("classes")
+	if(naturalBreaks[1]==0) document.getElementById("choropleth_legend").style.display = "none"
+	else{
+		document.getElementById("choropleth_legend").style.display = "block"
+		for(var j=0;j<legend.length;j++){
+			var a = parseInt(naturalBreaks[7-j]*10)/10
+			var b = parseInt(naturalBreaks[8-j]*10)/10
+			if(a==parseInt(a)) a= a+".0"
+			if(b==parseInt(b)) b= b+".0"
+			
+			legend[j].innerHTML = a+" - "+b
+		}
+	}
+}
+
+var popupElement = document.getElementById("countryName_popup")
+
+function popupOpen(event){
+	var name =event.target.id.split("_").join(" ");
+	if(popupElement.style.display=="none")
+		popupElement.style.display = "block"
+	popupElement.style.top = event.pageY-20 + "px"
+	popupElement.style.left = event.pageX+5 + "px"
+	
+	
+	popupElement.innerHTML = name
+	//console.log("I am popup " + name)
+}
+function popupClose(event){
+	ev=event;
+	popupElement.style.display = "none"
+}
+
+GUchange(null)
+
+for(var i=0;i<state.length;i++){
+	document.getElementById(state[i]).onmousemove = function(event){ popupOpen(event)}
+	document.getElementById(state[i]).onmouseout = function(event){ popupClose(event)}
 }
