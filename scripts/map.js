@@ -1,11 +1,16 @@
 var GU_bool = 1
 var ev
 var cons,cons2
-
+var class_colors= ["#d8f2ed","#b6d6d1","#97bdb7","#79a39e","#5e8c86","#467872","#2e635e","#154f4a"] //from lightest to darkest or from smallest value to highest value
 
 
 function GUchange(e){
 var mySvg = mySvg_map
+var classificationValues = []
+var classificationValues_def = []
+
+
+//increament
 if(e != null){
 	var tag = e.target.tagName
 	if(tag==="P" || tag ==="DIV")
@@ -56,15 +61,15 @@ for(var i=0;i<state.length;i++){
 	var cls=parseFloat(eval(str+'class'))
 	var leftAngles = [parseFloat(eval(str+'Murder')),parseFloat(eval(str+'Rape')),parseFloat(eval(str+'Robbery')),parseFloat(eval(str+'assault'))]
 	leftAngles.reverse()
+	classificationValues_def.push(leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])
 	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
 	
 	var sum = parseFloat(eval(str+'Total'))
 	var rightAngles = [parseFloat(eval(str+'White')),parseFloat(eval(str+'Black')),parseFloat(eval(str+'Native')),parseFloat(eval(str+'Asian')),parseFloat(eval(str+'More'))]
 	rightAngles = checkboxFilter(rightAngles,document.getElementsByClassName("race_layer"))
 	
-	var offsetX = 0
-	var offsetY = 0
-	var pos = [parseFloat(eval(str+'svgX'))-offsetX,parseFloat(eval(str+'svgY'))-offsetY]
+	
+	var pos = [parseFloat(eval(str+'svgX')),parseFloat(eval(str+'svgY'))]
 	//console.log(leftAngles)
 	
 	var Tvoilent = parseFloat(eval(str+'R2017'))
@@ -73,7 +78,7 @@ for(var i=0;i<state.length;i++){
 	
 	sum = rightAngles[0]+ rightAngles[1]+ rightAngles[2]+ rightAngles[3]+ rightAngles[4]
 	
-
+	classificationValues.push(leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])
 	
 	// 1mm3 = 100 Voilent Crime
 	var f = Math.pow(1039/50*3/4/Math.PI,1/3)*594/21000*cons
@@ -83,7 +88,7 @@ for(var i=0;i<state.length;i++){
 	var f2 = Math.pow(579315/10000*3/4/Math.PI,1/3)*594/21000*cons2
 	r= Math.pow(sum/579315,1/3)*f2*100*210/594
 	
-	
+	if(Tvoilent==0) continue;
 	if(GU_bool==0){
 		mySvg +=  generateSVG(state[i]+'_GU',leftAngles,rightAngles,cls,Math.pow(Tvoilent/1039,1/3)*f,Math.pow(sum/579315,1/3)*f2,pos);
 	}
@@ -103,6 +108,26 @@ basemap_svg.style.width = "99%"
 basemap_svg.style.height = "99%"
 basemap_svg.style.margin = "0px" 
 basemap_svg.style.padding = "0px" 
+
+if(GU_bool<2)
+	recolor(classificationValues);
+else
+	recolor(classificationValues_def);
 }
 
 GUchange(null)
+
+function recolor(values){
+	
+	var data = new geostats(values)
+	var naturalBreaks = data.getClassJenks(8)
+	console.log(naturalBreaks)
+	
+	for(var i=0;i<state.length;i++){
+		for(var j=1;j<naturalBreaks.length;j++)
+			if(values[i]<=naturalBreaks[j])
+				break;
+		
+		document.getElementById(state[i]).style.fill = class_colors[j-1]
+	}
+}
