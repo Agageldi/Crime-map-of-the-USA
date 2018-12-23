@@ -1,10 +1,27 @@
-var GU_bool = 1
+var GU_bool = 0
 var cons,cons2
 var class_colors= ["#d8f2ed","#b6d6d1","#97bdb7","#79a39e","#5e8c86","#467872","#2e635e","#154f4a"] //from lightest to darkest or from smallest value to highest value
-
-
+var playTimer
+function play(e){
+	
+	if(e.target.innerHTML == "►"){
+		e.target.innerHTML = "❙❙"
+		playTimer = setInterval(function(){
+			var year = parseInt(document.getElementById("year_slider").value) + 1
+			if(year == 2018) year =2013
+			document.getElementById("year_slider").value = year
+			GUchange(null)
+		}, 3000)
+		
+	}else{
+		e.target.innerHTML = "►"
+		clearInterval(playTimer)
+	}
+}
 
 function GUchange(e){
+
+var yearStamp="_"+document.getElementById("year_slider").value
 var mySvg = mySvg_map
 var classificationValues = []
 var classificationValues_def = []
@@ -22,19 +39,22 @@ if(e != null){
 // reference state for GU size
 var i=45
 var str = 'data.'+state[i]+'.'
-var leftAngles = [parseFloat(eval(str+'Murder')),parseFloat(eval(str+'Rape')),parseFloat(eval(str+'Robbery')),parseFloat(eval(str+'assault'))]
-	leftAngles.reverse()
-	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
-var rightAngles = [parseFloat(eval(str+'White')),parseFloat(eval(str+'Black')),parseFloat(eval(str+'Native')),parseFloat(eval(str+'Asian')),parseFloat(eval(str+'More'))]
+
+var rightAngles = [parseFloat(eval(str+'White'+yearStamp)),parseFloat(eval(str+'Black'+yearStamp)),parseFloat(eval(str+'Native'+yearStamp)),parseFloat(eval(str+'Asian'+yearStamp)),parseFloat(eval(str+'More'+yearStamp))]
 	rightAngles = checkboxFilter(rightAngles,document.getElementsByClassName("race_layer"))
 var sum = parseFloat(eval(str+'Total'))
-	Tvoilent = (leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])*sum/100000
+
+
+var leftAngles = [parseFloat(eval(str+'Murder'+yearStamp)),parseFloat(eval(str+'Rape'+yearStamp)),parseFloat(eval(str+'Robbery'+yearStamp)),parseFloat(eval(str+'assault'+yearStamp))]
+	leftAngles.reverse()
+var Tvoilent0 = leftAngles[0]+ leftAngles[1]+ leftAngles[2]+ leftAngles[3]
+	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
+	Tvoilent = leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3]
 	
 	sum = rightAngles[0]+ rightAngles[1]+ rightAngles[2]+ rightAngles[3]+ rightAngles[4]
 	
-cons = 	Math.pow(parseFloat(eval(str+'R2017'))/Tvoilent,1/3)
-cons2 = Math.pow(parseFloat(eval(str+'Total'))/sum,1/3)
-
+cons = 	Math.pow(Tvoilent0/Tvoilent,1/3)
+cons2 = Math.pow(parseFloat(eval(str+'Total'+yearStamp))/sum,1/3)
 
 
 
@@ -54,31 +74,26 @@ for(var i=0;i<state.length;i++){
 			document.getElementById("race_layers").style.height = "0px"
 	}
 	var str = 'data.'+state[i]+'.'
-	var factor = 275
-	var graph = [0,parseFloat(eval(str+'R2016'))*factor,parseFloat(eval(str+'R2015'))*factor,parseFloat(eval(str+'R2014'))*factor,parseFloat(eval(str+'R2013'))*factor]
-	graph.reverse()
-	
-	var cls=parseFloat(eval(str+'class'))
-	var leftAngles = [parseFloat(eval(str+'Murder')),parseFloat(eval(str+'Rape')),parseFloat(eval(str+'Robbery')),parseFloat(eval(str+'assault'))]
-	leftAngles.reverse()
-	classificationValues_def.push(leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])
-	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
-	
-	var sum = parseFloat(eval(str+'Total'))
-	var rightAngles = [parseFloat(eval(str+'White')),parseFloat(eval(str+'Black')),parseFloat(eval(str+'Native')),parseFloat(eval(str+'Asian')),parseFloat(eval(str+'More'))]
-	rightAngles = checkboxFilter(rightAngles,document.getElementsByClassName("race_layer"))
-	
 	
 	var pos = [parseFloat(eval(str+'svgX')),parseFloat(eval(str+'svgY'))]
 	//console.log(leftAngles)
 	
-	var Tvoilent = parseFloat(eval(str+'R2017'))
+	var sum = parseFloat(eval(str+'Total'+yearStamp))
+	var rightAngles = [parseFloat(eval(str+'White'+yearStamp)),parseFloat(eval(str+'Black'+yearStamp)),parseFloat(eval(str+'Native'+yearStamp)),parseFloat(eval(str+'Asian'+yearStamp)),parseFloat(eval(str+'More'+yearStamp))]
+	rightAngles = checkboxFilter(rightAngles,document.getElementsByClassName("race_layer"))
 	
-	Tvoilent = (leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])*sum/100000
+	
+	var leftAngles = [parseFloat(eval(str+'Murder'+yearStamp)),parseFloat(eval(str+'Rape'+yearStamp)),parseFloat(eval(str+'Robbery'+yearStamp)),parseFloat(eval(str+'assault'+yearStamp))]
+	leftAngles.reverse()
+	classificationValues_def.push(leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])
+	leftAngles = checkboxFilter(leftAngles,document.getElementsByClassName("crime_layer"))
+	
+	var Tvoilent = (leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])*sum/100000
+	
+	classificationValues.push(leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])
 	
 	sum = rightAngles[0]+ rightAngles[1]+ rightAngles[2]+ rightAngles[3]+ rightAngles[4]
 	
-	classificationValues.push(leftAngles[0]+leftAngles[1]+leftAngles[2]+leftAngles[3])
 	
 	// 1mm3 = 100 Voilent Crime
 	var f = Math.pow(1039/50*3/4/Math.PI,1/3)*594/21000*cons
@@ -90,7 +105,8 @@ for(var i=0;i<state.length;i++){
 	
 	if(Tvoilent==0) continue;
 	if(GU_bool==0){
-		mySvg +=  generateSVG(state[i]+'_GU',leftAngles,rightAngles,cls,Math.pow(Tvoilent/1039,1/3)*f,Math.pow(sum/579315,1/3)*f2,pos);
+		console.log(f2);
+		mySvg +=  generateSVG(state[i]+'_GU',leftAngles,rightAngles,Math.pow(Tvoilent/1039,1/3)*f,Math.pow(sum/579315,1/3)*f2,pos);
 	}
 	else
 	if(GU_bool==1)
@@ -117,9 +133,9 @@ else
 
 
 function recolor(values){
-	
+	var classNum =8
 	var data = new geostats(values)
-	var naturalBreaks = data.getClassJenks(8)
+	var naturalBreaks = data.getClassJenks(classNum)
 	console.log(naturalBreaks)
 	
 	for(var i=0;i<state.length;i++){
@@ -136,8 +152,8 @@ function recolor(values){
 	else{
 		document.getElementById("choropleth_legend").style.display = "block"
 		for(var j=0;j<legend.length;j++){
-			var a = parseInt(naturalBreaks[7-j]*10)/10
-			var b = parseInt(naturalBreaks[8-j]*10)/10
+			var a = parseInt(naturalBreaks[classNum-1-j]*10)/10
+			var b = parseInt(naturalBreaks[classNum-j]*10)/10
 			if(a==parseInt(a)) a= a+".0"
 			if(b==parseInt(b)) b= b+".0"
 			

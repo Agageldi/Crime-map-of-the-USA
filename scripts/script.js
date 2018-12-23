@@ -79,7 +79,7 @@ function generateSVG_simple(name,leftAngles,myScale,pos){
 	return mySvg
 }
 
-function generateSVG(name,leftAngles,rightAngles,cls,myScale,myScale2,pos){
+function generateSVG(name,leftAngles,rightAngles,myScale,myScale2,pos){
 
 	var mySvg = '<svg id = "aga_svg" height="400" width="650" transform = "scale(1)">'
 	mySvg = ''
