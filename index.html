@@ -20,6 +20,7 @@
 	div{
 		color: white;
 		font-family: Arial, Helvetica, sans-serif;
+		font-size:0.9em;
 	}
 	.button{
 		background-color: #B6DCF4;
@@ -96,24 +97,65 @@
 		<div style = "margin-top:10px;margin-bottom:10px;font-size:20px;text-align:center;height:40px;width:100%;background-color: #333;position: relative; float:left;">
 			Violent Crime in USA 2013-2017
 		</div>
-		<div class = "box_part" id="GU_part">
-			<div class = "button" onclick="GUchange(event)" style="left:5%;width:70px;height:30px;position: relative;float:left;"> 
-				<p class="center">Change</p>
+		<div class = "box_part" id="GU_part"  style="position: relative;">
+			<div class = "button" id="button2" onclick="GUchange(event)" style="background-image: url('./images/map.png');background-size: cover; left:5%;width:40px;height:40px;position: relative;float:left;"></div>
+			<div class = "button" id="button1" onclick="GUchange(event)" style="background-image: url('./images/GU1.png');background-size: cover; left:10%;width:40px;height:40px;position: relative;float:left;"></div>
+			<div class = "button" id="button0" onclick="GUchange(event)" style="background-image: url('./images/GU2.png');background-size: cover; left:15%;width:40px;height:40px;position: relative;float:left;"></div>
+
+
+			<div id="crime_layers" style="overflow:auto;margin-bottom:2px; color:black;height:80px;left:5%;width:90%;background-color:#c0c0c0;position: relative;float:left;">
+				<input onchange="GUchange(event)" class="crime_layer" type="checkbox" name="assult" value="nothing" checked>Assult<br>
+				<input onchange="GUchange(event)" class="crime_layer"type="checkbox" name="rape" value="nothing" checked>Rape<br>
+				<input onchange="GUchange(event)" class="crime_layer"type="checkbox" name="robbery" value="nothing" checked>Robbery<br>
+				<input onchange="GUchange(event)" class="crime_layer"type="checkbox" name="murder" value="nothing" checked>Murder<br>
 			</div>
-			<div id="crime_layers" style="overflow:auto;margin-bottom:2px; color:black;height:80px;left:5%;width:90%;background-color:white;position: relative;float:left;">
-				<input onchange="GUchange(event)" class="crime_layer" type="checkbox" name="assult" value="nothing" checked>assult<br>
-				<input onchange="GUchange(event)" class="crime_layer"type="checkbox" name="rape" value="nothing" checked>rape<br>
-				<input onchange="GUchange(event)" class="crime_layer"type="checkbox" name="robbery" value="nothing" checked>robbery<br>
-				<input onchange="GUchange(event)" class="crime_layer"type="checkbox" name="murder" value="nothing" checked>murder<br>
-			</div>
-			<div id="race_layers" style="overflow:auto;color:black;height:100px;left:5%;width:90%;background-color:white;position: relative;float:left;">
-				<input onchange="GUchange(event)" class="race_layer" type="checkbox" name="white" value="nothing" checked>Race Alone - White<br>
-				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="black" value="nothing" checked>Race Alone - Black or African American<br>
-				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="native" value="nothing" checked>Race Alone - Native American<br>
-				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="asian" value="nothing" checked>Race Alone - Asian<br>
+			<div id="race_layers" style="overflow:auto;color:black;height:100px;left:5%;width:90%;background-color:#c0c0c0;position: relative;float:left;">
+				<input onchange="GUchange(event)" class="race_layer" type="checkbox" name="white" value="nothing" checked>White<br>
+				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="black" value="nothing" checked>Black or African American<br>
+				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="native" value="nothing" checked>Native American<br>
+				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="asian" value="nothing" checked>Asian<br>
 				<input onchange="GUchange(event)" class="race_layer"type="checkbox" name="more" value="nothing" checked>Two or More Races<br>
 			</div>
-		</div>	
+		</div>
+		<style>
+				.crime_sphere, .race_sphere{
+					margin-top:7px;
+					height:10px;
+					width:20px;
+					margin-right:80%;
+				}
+				.crime_sphere p, .race_sphere p{
+					white-space: nowrap;
+					padding:0px;
+					margin:0px;
+					margin-left:30px;
+					transform: translateY(0px);
+				}
+				
+				</style>
+		<div id="legend_GU_parts" style="margin-top:20px; color:black;height:80px;left:5%;width:90%;position: relative; float:left; margin-right:5%;">
+			<div id="legend_GU_first" style=" color:black;height:100%;width:35%;position: relative; float:left;">
+			</div>
+			<div id="legend_GU_first_txt" style=" color:black;height:100%; width:50%;position: relative; float:left;">
+				<div class = "crime_sphere" style="background-color:#fb8072;"><p>Assult</p></div>
+				<div class = "crime_sphere" style="background-color:#bebada;"><p>Rape</p></div>
+				<div class = "crime_sphere" style="background-color:#ffffb3;"><p>Robbery</p></div>
+				<div class = "crime_sphere" style="background-color:#0f5a27;"><p>Murder</p></div>
+			</div>
+			
+			
+			
+			<div id="legend_GU_second_txt" style=" color:black;height:100%; width:70%;position: relative; float:left;">
+				<div class = "race_sphere" style="background-color:#fb8072;"><p>White</p></div>
+				<div class = "race_sphere" style="background-color:#bebada;"><p>Black or African American</p></div>
+				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Native American</p></div>
+				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Asian</p></div>
+				<div class = "race_sphere" style="background-color:#0f5a27;"><p>Two or More Races</p></div>
+			</div>
+			<div id="legend_GU_second" style=" color:black;height:100%;width:20%;position: relative; float:left;">
+			</div>
+		</div>
+		
 		
 		
 	</div>

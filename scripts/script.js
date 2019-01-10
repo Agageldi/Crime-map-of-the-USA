@@ -116,7 +116,10 @@ function generateSVG(name,leftAngles,rightAngles,myScale,myScale2,pos){
 	}
 	var scale1= myScale*10
 	mySvg +='<path id="_x33_dright" fill="#FFFFFF" d="M'+(x0*0.70)+','+(y0/4)+'c0,0,0,'+0.1*scale1+',0,'+0.2*scale1+'c0,0'+(-0.1*scale1)+','+0.1*scale1+''+(-0.1*scale1)+','+0.1*scale1+'c'+(-0.2*scale1)+','+0.1*scale1+''+(-0.5*scale1)+','+0.2*scale1+''+(-0.7*scale1)+','+0.4*scale1+'	c'+(-0.1*scale1)+','+0.1*scale1+''+(-0.1*scale1)+','+0.1*scale1+''+(-0.2*scale1)+','+0.2*scale1+'c'+(-0.1*scale1)+',0'+(-0.1*scale1)+',0'+(-0.2*scale1)+','+0.1*scale1+'c0,0'+(-0.1*scale1)+','+0.1*scale1+''+(-0.1*scale1)+','+0.1*scale1+'c'+(-0.2*scale1)+','+0.1*scale1+''+(-0.3*scale1)+','+0.3*scale1+'-'+0.4*scale1+','+0.4*scale1+'c-'+0.1*scale1+','+0.2*scale1+'-'+0.2*scale1+','+0.4*scale1+'-'+0.4*scale1+','+0.4*scale1+'	c0,0-'+0.1*scale1+',0-'+0.1*scale1+',0c-'+0.1*scale1+',0-'+0.1*scale1+'-'+0.1*scale1+'-'+0.1*scale1+'-'+0.1*scale1+'c-'+0.1*scale1+'-'+0.2*scale1+'-'+0.4*scale1+'-'+0.2*scale1+'-'+0.5*scale1+'-'+0.3*scale1+'c-'+0.1*scale1+'-'+0.1*scale1+'-'+0.1*scale1+'-'+0.2*scale1+'-'+0.1*scale1+'-'+0.3*scale1+'c0-'+0.1*scale1+',0-'+0.2*scale1+',0-'+0.2*scale1+'	c0-'+0.1*scale1+','+0.1*scale1+'-'+0.1*scale1+','+0.2*scale1+'-'+0.2*scale1+'c'+0.1*scale1+'-'+0.1*scale1+','+0.3*scale1+'-'+0.2*scale1+','+0.4*scale1+'-'+0.3*scale1+'c'+0.1*scale1+'-'+0.1*scale1+','+0.3*scale1+'-'+0.2*scale1+','+0.4*scale1+'-'+0.3*scale1+'c'+0.4*scale1+'-'+0.3*scale1+','+0.9*scale1+'-'+0.6*scale1+','+1.3*scale1+'-'+0.8*scale1+'c'+0.2*scale1+'-'+0.1*scale1+','+0.4*scale1+'-'+0.3*scale1+','+0.5*scale1+',0z"/>'
-
+	
+	
+	
+	mySvg +="\n\n\n"
 	//-------------------------------------------------------------------------------
 	/*The graph  repsents crime density rate ofbetween the year and 2017, the last value of the data.
 	  The left side shows rate of change violent crime density between 2013 and 2017 and 
@@ -150,6 +153,7 @@ function generateSVG(name,leftAngles,rightAngles,myScale,myScale2,pos){
 	mySvg += '<path id="_x33_dleft" fill="#FFFFFF" d="M'+(x0+r/2)+','+(y0-r/2)+'c0,0-'+0.1*scale2+','+0.1*scale2+'-'+0.2*scale2+',0c0,0-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'c-'+0.1*scale2+'-'+0.2*scale2+'-'+0.3*scale2+'-'+0.4*scale2+'-'+0.4*scale2+'-'+0.6*scale2+' c-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'-'+0.2*scale2+'-'+0.2*scale2+'c0-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'-'+0.2*scale2+'c0,0-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'-'+0.1*scale2+'c-'+0.1*scale2+'-'+0.1*scale2+'-'+0.3*scale2+'-'+0.3*scale2+'-'+0.5*scale2+'-'+0.4*scale2+'c-'+0.2*scale2+'-'+0.1*scale2+'-'+0.4*scale2+'-'+0.2*scale2+'-'+0.5*scale2+'-'+0.4*scale2+'	c0,0,0-'+0.1*scale2+',0-'+0.1*scale2+'c0-'+0.1*scale2+','+0.1*scale2+'-'+0.1*scale2+','+0.1*scale2+'-'+0.1*scale2+'c'+0.1*scale2+'-'+0.1*scale2+','+0.2*scale2+'-'+0.4*scale2+','+0.3*scale2+'-'+0.5*scale2+'c'+0.1*scale2+'-'+0.1*scale2+','+0.2*scale2+'-'+0.1*scale2+','+0.3*scale2+'-'+0.2*scale2+'c'+0.1*scale2+',0,'+0.2*scale2+'-'+0.1*scale2+','+0.2*scale2+',0	c'+0.1*scale2+',0,'+0.2*scale2+','+0.1*scale2+','+0.2*scale2+','+0.2*scale2+'c'+0.1*scale2+','+0.1*scale2+','+0.2*scale2+','+0.2*scale2+','+0.3*scale2+','+0.4*scale2+'c'+0.1*scale2+','+0.1*scale2+','+0.2*scale2+','+0.2*scale2+','+0.3*scale2+','+0.4*scale2+'c'+0.3*scale2+','+0.4*scale2+','+0.7*scale2+','+0.8*scale2+','+scale2+','+1.2*scale2+'c'+0.2*scale2+','+0.2*scale2+','+0.3*scale2+','+0.4*scale2+',0,'+0.5*scale2+'z"/>'
 
 	mySvg += '</g>'
+	
 	//mySvg += '</svg>'
 	//console.log(mySvg);
 	return mySvg

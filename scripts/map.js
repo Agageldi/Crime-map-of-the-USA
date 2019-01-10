@@ -27,13 +27,21 @@ var classificationValues = []
 var classificationValues_def = []
 
 
+for(var i=0;i<=2;i++)
+	document.getElementById("button"+i).style.backgroundColor="#e6e6fa"
+
 //increament
 if(e != null){
-	var tag = e.target.tagName
-	if(tag==="P" || tag ==="DIV")
-		GU_bool = (GU_bool+1)%3
+	var id = e.target.id
+	if(id=="button1") GU_bool=1
+	if(id=="button2") GU_bool=2
+	if(id=="button0") GU_bool=0
 }
+//highlighting button
+document.getElementById("button"+GU_bool).style.backgroundColor="#F14E15"
 
+// legend update
+GULegendUpdate();
 
 
 // reference state for GU size
@@ -179,6 +187,70 @@ function popupClose(event){
 	ev=event;
 	popupElement.style.display = "none"
 }
+function GULegendUpdate(){
+	
+var legend_box = document.getElementById("legend_GU_parts")
+
+if(GU_bool==0){
+	legend_box.style.display = "block"
+	document.getElementById("legend_GU_second").style.display="block"
+	document.getElementById("legend_GU_second_txt").style.display="block"
+
+	var angles = [20,16,10,8]
+	var rightAng = [20,16,10,8,4]
+	angles = checkboxFilter(angles,document.getElementsByClassName("crime_layer"))
+	rightAng = checkboxFilter(rightAng,document.getElementsByClassName("race_layer"))
+	
+	var GU=generateSVG("legend_svg1",angles,rightAng,1,1,[100,100]).split('\n\n\n')
+	
+	var txt=document.getElementsByClassName("crime_sphere")
+	for(var i=0;i<angles.length;i++)
+	{
+		txt[i].style.backgroundColor=leftColors[i]
+		if(angles[i]==0)
+			txt[i].style.display = "none"
+		else
+			txt[i].style.display = "block"
+	}
+	txt = document.getElementsByClassName("race_sphere")
+	for(var i=0;i<rightAng.length;i++)
+	{
+		txt[i].style.backgroundColor=rightColors[i]
+		if(rightAng[i]==0)
+			txt[i].style.display = "none"
+		else
+			txt[i].style.display = "block"
+	}
+	
+	var leg_svg = "<svg id = 'legend_svg0' style='height:100%;' viewBox='0 0 220 220'>"
+
+	document.getElementById("legend_GU_first").innerHTML=leg_svg + GU[0]+"</svg>"
+	document.getElementById("legend_GU_second").innerHTML=leg_svg + GU[1]+"</svg>"
+	
+}else if(GU_bool==1){
+	document.getElementById("legend_GU_second").style.display="none"
+	document.getElementById("legend_GU_second_txt").style.display="none"
+	
+	legend_box.style.display = "block"
+	var angles = [20,16,10,8]
+	angles = checkboxFilter(angles,document.getElementsByClassName("crime_layer"))
+	
+	txt=document.getElementsByClassName("crime_sphere")
+	for(var i=0;i<angles.length;i++)
+		if(angles[i]==0)
+			txt[i].style.display = "none"
+		else
+			txt[i].style.display = "block"
+		
+	var leg_svg = "<svg id = 'legend_svg0' style='height:100%;' viewBox='0 0 200 200'>"
+	leg_svg += generateSVG_simple("legend_svg1",angles,1,[100,100])+"</svg>"
+	document.getElementById("legend_GU_first").innerHTML=leg_svg
+	
+}else if(GU_bool==2)
+	legend_box.style.display = "none"
+
+
+}
 
 GUchange(null)
 
@@ -186,3 +258,4 @@ for(var i=0;i<state.length;i++){
 	document.getElementById(state[i]).onmousemove = function(event){ popupOpen(event)}
 	document.getElementById(state[i]).onmouseout = function(event){ popupClose(event)}
 }
+
