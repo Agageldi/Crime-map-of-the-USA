@@ -15,7 +15,7 @@
 	<!--script type="text/javascript" src="json.js"> </script>
 	<script type="text/javascript" src="svg.js"> </script-->
   </head>
-  <body style= "margin:0px;padding:0px;height:100%;width:100%;">
+<body onresize = "legendSizeNumberUpdate(event)" style= "margin:0px;padding:0px;height:100%;width:100%;">
   <style>
 	div{
 		color: white;
@@ -141,19 +141,28 @@
 				<div class = "crime_sphere" style="background-color:#bebada;"><p>Rape</p></div>
 				<div class = "crime_sphere" style="background-color:#ffffb3;"><p>Robbery</p></div>
 				<div class = "crime_sphere" style="background-color:#0f5a27;"><p>Murder</p></div>
+
 			</div>
+			<div  style="font-size:10px; position: absolute; top:80px;"><span class = "size_txt2">2000</span> crime</div>
+			<div  style="font-size:10px; position: absolute; top:90px;transform: translate(0%,0%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
 			
 			
 			
-			<div id="legend_GU_second_txt" style=" color:black;height:100%; width:70%;position: relative; float:left;">
+			
+			<div id="legend_GU_second_txt" style=" border-color:#c0c0c0;border-width:1px 0px 0px 0px;border-style:solid;margin-top:30px;color:black;height:100%; width:70%;position: relative; float:left;">
 				<div class = "race_sphere" style="background-color:#fb8072;"><p>White</p></div>
 				<div class = "race_sphere" style="background-color:#bebada;"><p>Black or African American</p></div>
 				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Native American</p></div>
 				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Asian</p></div>
 				<div class = "race_sphere" style="background-color:#0f5a27;"><p>Two or More Races</p></div>
+				
+				<div  style="font-size:10px; position: absolute; right:10%; top:70px;transform: translate(0%,-100%);"><span class = "size_txt2">2000</span> people</div>
+				<div  style="font-size:10px; position: absolute; right:10%; top:90px;transform: translate(0%,-100%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
 			</div>
-			<div id="legend_GU_second" style=" color:black;height:100%;width:20%;position: relative; float:left;">
+			<div id="legend_GU_second" style=" margin-top:30px;color:black;height:100%;width:20%;position: relative; float:left;">
 			</div>
+			
+			
 		</div>
 		
 		
@@ -165,7 +174,9 @@
 	<script type="text/javascript" src="scripts/script.js"> </script>
 	<script type="text/javascript" src="scripts/map.js"> </script>
 
-	
+	<script>
+		GUchange(null)
+	</script>
 	<!--div id="legendDIV">Hello</div-->
 	
     <!--script type="text/javascript" src="script.js"> </script>

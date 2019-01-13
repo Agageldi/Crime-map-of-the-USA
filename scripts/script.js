@@ -3,7 +3,7 @@ var rightColors = ['#e5c9aa','#9f9167','#cc760e','#fccd35','#715677']
 var graphColor = ['#1b9e77','#d95f02','#ff4c4c','#e7298a','#e0edd2','#e6ab02','#a6761d']
 
 
-var graphlegend = '<svg id="graphlegend"> <path id="x_axis" d = "M0 50 l 15 0" style="stroke:black;stroke-width:0.2; stroke-opacity:1;" />'
+//var graphlegend = '<svg id="graphlegend"> <path id="x_axis" d = "M0 50 l 15 0" style="stroke:black;stroke-width:0.2; stroke-opacity:1;" />'
 var graphchecklist = [1,1,1,1,1,1,1]
 function calc(x0,y0,x1,y1,a,r){
 	  var dx= x1-x0
@@ -158,9 +158,3 @@ function generateSVG(name,leftAngles,rightAngles,myScale,myScale2,pos){
 	//console.log(mySvg);
 	return mySvg
 }
-
-
-//console.log(mySvg)
-
-//document.getElementById('myDIV').innerHTML = mySvg
-//document.getElementById('legendDIV').innerHTML = graphlegend

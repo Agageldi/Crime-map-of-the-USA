@@ -2,6 +2,23 @@ var GU_bool = 0
 var cons,cons2
 var class_colors= ["#d8f2ed","#b6d6d1","#97bdb7","#79a39e","#5e8c86","#467872","#2e635e","#154f4a"] //from lightest to darkest or from smallest value to highest value
 var playTimer
+var legendCricleScale = [0.5,0.5]
+function circleResize(e,i){
+	x=e
+	var elm = e.target
+	while(elm.style.height != "100%")
+		elm = elm.parentElement
+	x=elm
+	legendCricleScale[i] *= (e.wheelDelta>0)?1.05:0.95
+	legendCricleScale[i] = (legendCricleScale[i]>1)?1:legendCricleScale[i];
+	legendCricleScale[i] = (legendCricleScale[i]<0.1)?0.1:legendCricleScale[i];
+	
+	GULegendUpdate()
+	
+	legendSizeNumberUpdate()
+	//elm.style.transform
+}
+
 function play(e){
 	
 	if(e.target.innerHTML == "►"){
@@ -104,16 +121,24 @@ for(var i=0;i<state.length;i++){
 	
 	
 	// 1mm3 = 100 Voilent Crime
+	// 1px3 = 9.2546
 	var f = Math.pow(1039/50*3/4/Math.PI,1/3)*594/21000*cons
-	r=Math.pow(Tvoilent/1039,1/3)*f*100*210/594
+	r=Math.pow(Tvoilent/1039,1/3)*f*100*25.4/getDPI()
+	
+	
+	var scale1=document.body.clientWidth/650*.7
+	if(scale1>document.body.clientHeight/500) scale1 = document.body.clientHeight/500
 	
 	// 1mm3 = 20 000 people
+	// 1px3 = 1850.9179
 	var f2 = Math.pow(579315/10000*3/4/Math.PI,1/3)*594/21000*cons2
-	r= Math.pow(sum/579315,1/3)*f2*100*210/594
+	r= Math.pow(sum/579315,1/3)*f2*100 *25.4/getDPI()
+	console.log(state[i]+"  1px3  ->"+sum/Math.pow(r*scale1,3)*2)
+	
 	
 	if(Tvoilent==0) continue;
 	if(GU_bool==0){
-		console.log(f2);
+		//console.log(f2);
 		mySvg +=  generateSVG(state[i]+'_GU',leftAngles,rightAngles,Math.pow(Tvoilent/1039,1/3)*f,Math.pow(sum/579315,1/3)*f2,pos);
 	}
 	else
@@ -123,7 +148,7 @@ for(var i=0;i<state.length;i++){
 }
 //generateSVG(leftAngles,rightAngles,graph,1./3/7.86,pos);
 mySvg += '</svg>'
-graphlegend+= '</svg>'
+//graphlegend+= '</svg>'
 
 var basemap = document.getElementById("mapid")
 basemap.innerHTML = mySvg
@@ -137,6 +162,14 @@ if(GU_bool<2)
 	recolor(classificationValues);
 else
 	recolor(classificationValues_def);
+
+for(var i=0;i<state.length;i++){
+	document.getElementById(state[i]).onmousemove = function(event){ popupOpen(event)}
+	document.getElementById(state[i]).onmouseout = function(event){ popupClose(event)}
+}
+
+legendSizeNumberUpdate()
+
 }
 
 
@@ -190,6 +223,8 @@ function popupClose(event){
 function GULegendUpdate(){
 	
 var legend_box = document.getElementById("legend_GU_parts")
+var leg_svg = "<svg class = 'legend_svg0' onwheel='circleResize(event,0)' style='transform:scale("+legendCricleScale[0]+");height:100%;' viewBox='0 0 220 200'>"
+var leg_svg2 = "<svg class = 'legend_svg0' onwheel='circleResize(event,1)' style='transform:scale("+legendCricleScale[1]+");height:100%;' viewBox='0 0 220 200'>"
 
 if(GU_bool==0){
 	legend_box.style.display = "block"
@@ -222,10 +257,9 @@ if(GU_bool==0){
 			txt[i].style.display = "block"
 	}
 	
-	var leg_svg = "<svg id = 'legend_svg0' style='height:100%;' viewBox='0 0 220 220'>"
-
-	document.getElementById("legend_GU_first").innerHTML=leg_svg + GU[0]+"</svg>"
-	document.getElementById("legend_GU_second").innerHTML=leg_svg + GU[1]+"</svg>"
+	
+	document.getElementById("legend_GU_first").innerHTML=leg_svg + GU[0]+"</svg>" //<text id='legend1_value' x='20' y= '220' style='fill:white;font-size:15px;font-family:ArialMT'>anything</text>
+	document.getElementById("legend_GU_second").innerHTML=leg_svg2 + GU[1]+"</svg>"
 	
 }else if(GU_bool==1){
 	document.getElementById("legend_GU_second").style.display="none"
@@ -242,20 +276,76 @@ if(GU_bool==0){
 		else
 			txt[i].style.display = "block"
 		
-	var leg_svg = "<svg id = 'legend_svg0' style='height:100%;' viewBox='0 0 200 200'>"
 	leg_svg += generateSVG_simple("legend_svg1",angles,1,[100,100])+"</svg>"
 	document.getElementById("legend_GU_first").innerHTML=leg_svg
 	
 }else if(GU_bool==2)
 	legend_box.style.display = "none"
 
+}
+function getDPI() {
+    var div = document.createElement( "div");
+    div.style.height = "1in";
+    div.style.width = "1in";
+    div.style.top = "-100%";
+    div.style.left = "-100%";
+    div.style.position = "absolute";
+
+    document.body.appendChild(div);
+
+    var result =  div.offsetHeight;
+
+    document.body.removeChild( div );
+
+    return result;
 
 }
 
-GUchange(null)
-
-for(var i=0;i<state.length;i++){
-	document.getElementById(state[i]).onmousemove = function(event){ popupOpen(event)}
-	document.getElementById(state[i]).onmouseout = function(event){ popupClose(event)}
+function legendSizeNumberUpdate(){
+		var leg = document.getElementsByClassName("size_txt")
+		
+		var DPI = getDPI()
+		var scale1=document.body.clientWidth/650*.7
+		if(scale1>document.body.clientHeight/500) scale1 = document.body.clientHeight/500
+		scale1 = Math.pow(scale1,3)
+		
+		
+		var val=[788/Math.pow(cons,3)/scale1,157644/Math.pow(cons2,3)/scale1]
+		
+		for(var i=0;i<leg.length;i++){
+			var a =Math.round(val[i])
+			if(GU_bool==0) a = Math.round(a*2)
+			var str = ""
+			x=0;
+			while(a>0){
+				
+				str=(a%10)+str
+				a=parseInt(a/10);
+				x++;
+				if(x%3===0) str=" "+str
+			}
+			leg[i].innerHTML=str
+		}
+		
+		var leg = document.getElementsByClassName("size_txt2")
+		var scale_legend
+		var r=40*200/220.*25.4/DPI
+		for(var i=0;i<leg.length;i++){
+			var a= Math.round(val[i]*Math.pow(r*legendCricleScale[i],3))
+			var str = ""
+			x=0;
+			while(a>0){
+				
+				str=(a%10)+str
+				a=parseInt(a/10);
+				x++;
+				if(x%3===0) str=" "+str
+			}
+			leg[i].innerHTML=str
+		}
+		
 }
+
+
+
 
