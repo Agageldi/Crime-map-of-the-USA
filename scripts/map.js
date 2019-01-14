@@ -1,6 +1,12 @@
 var GU_bool = 0
 var cons,cons2
 var class_colors= ["#d8f2ed","#b6d6d1","#97bdb7","#79a39e","#5e8c86","#467872","#2e635e","#154f4a"] //from lightest to darkest or from smallest value to highest value
+//class_colors = ['#f7fcfd','#d5e1e1','#b5c8c6','#95aeac','#769692','#577d79','#376661','#154f4a']
+//class_colors= ['#f7fcfd','#e5f5f9','#ccece6','#99d8c9','#66c2a4',"#467872","#2e635e","#154f4a"] 
+//class_colors = ['#f7fcfd','#e5f5f9','#ccece6','#99d8c9','#66c2a4','#41ae76','#238b45','#005824'] // bright green
+//class_colors = ['#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525'] // grey scale
+//class_colors = ['#fff5f0','#fee0d2','#fcbba1','#fc9272','#fb6a4a','#ef3b2c','#cb181d','#99000d']// brownish red
+//class_colors = ['#f7fbff','#deebf7','#c6dbef','#9ecae1','#6baed6','#4292c6','#2171b5','#084594'] // blue
 var playTimer
 var legendCricleScale = [0.5,0.5]
 function circleResize(e,i){
@@ -19,25 +25,10 @@ function circleResize(e,i){
 	//elm.style.transform
 }
 
-function play(e){
-	
-	if(e.target.innerHTML == "►"){
-		e.target.innerHTML = "❙❙"
-		playTimer = setInterval(function(){
-			var year = parseInt(document.getElementById("year_slider").value) + 1
-			if(year == 2018) year =2013
-			document.getElementById("year_slider").value = year
-			GUchange(null)
-		}, 3000)
-		
-	}else{
-		e.target.innerHTML = "►"
-		clearInterval(playTimer)
-	}
-}
+
 
 function GUchange(e){
-
+document.getElementById("play_year").innerHTML = document.getElementById("year_slider").value
 var yearStamp="_"+document.getElementById("year_slider").value
 var mySvg = mySvg_map
 var classificationValues = []
@@ -206,14 +197,15 @@ function recolor(values){
 var popupElement = document.getElementById("countryName_popup")
 
 function popupOpen(event){
-	var name =event.target.id.split("_").join(" ");
+	var name =event.target.id.split("_")
 	if(popupElement.style.display=="none")
 		popupElement.style.display = "block"
 	popupElement.style.top = event.pageY-20 + "px"
 	popupElement.style.left = event.pageX+5 + "px"
 	
+	for(var i=0;i<name.length;i++)		name[i]= name[i][0]+name[i].toLowerCase().slice(1)
 	
-	popupElement.innerHTML = name
+	popupElement.innerHTML = name.join(" ")
 	//console.log("I am popup " + name)
 }
 function popupClose(event){
@@ -309,6 +301,7 @@ function legendSizeNumberUpdate(){
 		if(scale1>document.body.clientHeight/500) scale1 = document.body.clientHeight/500
 		scale1 = Math.pow(scale1,3)
 		
+		document.getElementById('choropleth_legend').style.transform = (scale1/2.5>1)?'scale(1)':'scale('+scale1/2.5+')'
 		
 		var val=[788/Math.pow(cons,3)/scale1,157644/Math.pow(cons2,3)/scale1]
 		

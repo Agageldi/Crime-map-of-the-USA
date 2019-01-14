@@ -76,11 +76,31 @@
     <div id = "mapbox" style = "background-color: #f7fbfd;height:100%;width:70%;margin:0px; padding:0px; position: relative; float:left;">
 		<div id="mapid" style = "background-color: #f7fbfd;height:100%;width:100%;margin:0px; padding:0px; position: relative; float:left;">
 		</div>
-		<div id="year_slider_box" style = "top:30px;right:30px;position: absolute;height:10px;width:100px;margin:0px; padding:0px; ">
-			<div id="play_button" onclick="play(event)" style="cursor:pointer;left:-30px;height:15px; background-color:transparent;width:50px;color:black;position:absolute;">►</div>
-			<input onchange="GUchange(event)" id="year_slider" type="range" min="2013" max="2017" value="2017" style = "height:100%;width:100%;margin:0px; padding:0px; ">
+		<div id="year_slider_box" style = "top:15px;right:30px;position: absolute;height:10px;width:100px;margin:0px; padding:0px; ">
+			<div id="play_year"  style="transform:translateX(-100%);left:-15px;height:15px; background-color:transparent;width:50px;color:black;position:absolute;">2017</div>
+			<!--div id="play_button" onclick="play(event)" style="cursor:pointer;left:-30px;height:15px; background-color:transparent;width:50px;color:black;position:absolute;">►</div-->
+			<input oninput="GUchange(event)" id="year_slider" type="range" min="2013" max="2017" value="2017" style = "height:100%;width:100%;margin:0px; padding:0px; ">
 		</div>
-		<div id="choropleth_legend" style="right:40px;bottom:40px;position:absolute;height:180px;width:50px">
+<script>
+function play(e){
+	
+	if(e.target.innerHTML == "►"){
+		e.target.innerHTML = "❙❙"
+		playTimer = setInterval(function(){
+			var year = parseInt(document.getElementById("year_slider").value) + 1
+			if(year == 2018) year =2013
+			document.getElementById("year_slider").value = year
+			GUchange(null)
+			document.getElementById("play_year").innerHTML = year
+		}, 3000)
+		
+	}else{
+		e.target.innerHTML = "►"
+		clearInterval(playTimer)
+	}
+}
+</script>
+		<div id="choropleth_legend" style="transform:scale(1);right:40px;bottom:40px;position:absolute;height:180px;width:50px">
 			<div class="classes" id="class1">121-200</div>
 			<div class="classes" id="class2">121-200</div>
 			<div class="classes" id="class3">121-200</div>
@@ -156,8 +176,8 @@
 				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Asian</p></div>
 				<div class = "race_sphere" style="background-color:#0f5a27;"><p>Two or More Races</p></div>
 				
-				<div  style="font-size:10px; position: absolute; right:10%; top:70px;transform: translate(0%,-100%);"><span class = "size_txt2">2000</span> people</div>
-				<div  style="font-size:10px; position: absolute; right:10%; top:90px;transform: translate(0%,-100%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
+				<div  style="font-size:10px; position: absolute; right:0px; top:70px;transform: translate(100%,100%);"><span class = "size_txt2">2000</span> people</div>
+				<div  style="font-size:10px; position: absolute; right:0px; top:80px;transform: translate(100%,100%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
 			</div>
 			<div id="legend_GU_second" style=" margin-top:30px;color:black;height:100%;width:20%;position: relative; float:left;">
 			</div>
