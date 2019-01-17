@@ -16,13 +16,13 @@
    y="0px"
    viewBox="0 0 650 500"
    xml:space="preserve"
-   sodipodi:docname="1.svg"
+   sodipodi:docname="2.svg"
    width="650"
    height="500"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata2268"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs2266"><clipPath
      id="SVGID_292_-0"><use
        xlink:href="#SVGID_291_-8"
@@ -912,7 +912,17 @@
      id="SVG_CP_8"><path
        inkscape:connector-curvature="0"
        d="M 0,595.50236 V 0 h 842.25827 v 595.50236 z"
-       id="path1104" /></clipPath></defs><sodipodi:namedview
+       id="path1104" /></clipPath><filter
+     inkscape:collect="always"
+     style="color-interpolation-filters:sRGB"
+     id="filter5423"
+     x="-0.0040615205"
+     width="1.008123"
+     y="-0.011478404"
+     height="1.0229568"><feGaussianBlur
+       inkscape:collect="always"
+       stdDeviation="0.18944508"
+       id="feGaussianBlur5425" /></filter></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -926,12 +936,12 @@
    id="namedview2264"
    showgrid="false"
    borderlayer="true"
-   inkscape:zoom="1.9681839"
-   inkscape:cx="622.042"
-   inkscape:cy="66.021278"
-   inkscape:window-x="0"
-   inkscape:window-y="0"
-   inkscape:window-maximized="0"
+   inkscape:zoom="3.9363677"
+   inkscape:cx="552.29418"
+   inkscape:cy="63.109991"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
    inkscape:current-layer="g2099"
    inkscape:measure-start="0,0"
    inkscape:measure-end="0,0"
@@ -1832,7 +1842,7 @@
    y="557.08044"
    style="fill:#d8f2ed;fill-opacity:1;stroke:#000000;stroke-width:0.62255257;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><text
    xml:space="preserve"
-   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.42619896px;line-height:1.25;font-family:ArialMT;-inkscape-font-specification:ArialMT;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
    x="553.2879"
    y="605.84125"
    id="class7"
@@ -1842,7 +1852,7 @@
      id="tspan714"
      x="553.2879"
      y="605.84125"
-     style="font-size:8px;stroke-width:0.93196493">00120 </tspan></text>
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:ArialMT;-inkscape-font-specification:ArialMT;stroke-width:0.93196493">I am class 7</tspan></text>
 <rect
    id="rect708-9"
    width="20.010746"
@@ -1861,7 +1871,7 @@
      id="tspan714-0"
      x="553.2879"
      y="590.49548"
-     style="font-size:8px;stroke-width:0.93196493">00120 </tspan></text>
+     style="font-size:8px;stroke-width:0.93196493">I am class 6</tspan></text>
 <rect
    id="rect708-9-0"
    width="20.010746"
@@ -1880,7 +1890,7 @@
      id="tspan714-0-7"
      x="553.2879"
      y="576.95032"
-     style="font-size:8px;stroke-width:0.93196493">00120 </tspan></text>
+     style="font-size:8px;stroke-width:0.93196493">I am class 5</tspan></text>
 <rect
    id="rect708-9-0-3"
    width="20.010746"
@@ -1899,7 +1909,7 @@
      id="tspan714-0-7-6"
      x="553.2879"
      y="562.97083"
-     style="font-size:8px;stroke-width:0.93196493">00120 </tspan></text>
+     style="font-size:8px;stroke-width:0.93196493">I am class 4</tspan></text>
 <rect
    id="rect708-9-0-3-8"
    width="20.010746"
@@ -1918,7 +1928,7 @@
      id="tspan714-0-7-6-5"
      x="553.2879"
      y="548.99133"
-     style="font-size:8px;stroke-width:0.93196493">00120 </tspan></text>
+     style="font-size:8px;stroke-width:0.93196493">I am class 3</tspan></text>
 <rect
    id="rect708-9-0-3-8-5"
    width="20.010746"
@@ -1928,45 +1938,88 @@
    style="fill:#467872;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
-   x="553.2879"
-   y="535.0119"
+   x="558.07465"
+   y="475.53839"
    id="class2"
    inkscape:label="#text716-6-8-9-5-0"
    transform="scale(1.0735782,0.93146451)"><tspan
      sodipodi:role="line"
-     id="tspan714-0-7-6-5-1"
-     x="553.2879"
-     y="535.0119"
-     style="font-size:8px;stroke-width:0.93196493">00120 </tspan></text>
+     id="tspan5511"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:ArialMT;-inkscape-font-specification:ArialMT;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="558.07465"
+     y="475.53839">violent crime density</tspan></text>
 <rect
    id="rect708-9-0-3-8-5-8"
    width="20.010746"
    height="8.6809225"
    x="567.98401"
    y="478.08405"
-   style="fill:#2e635e;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><path
-   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
-   d="m 612.99023,479.7919 c -0.31033,0 -0.63019,0.0351 -0.96289,0.10547 -0.3299,0.0704 -0.59446,0.14948 -0.79296,0.23438 v 0.76367 h 0.041 c 0.28237,-0.1601 0.57279,-0.2798 0.86914,-0.35742 0.29635,-0.0776 0.57176,-0.11524 0.82617,-0.11524 0.38302,0 0.6801,0.0801 0.89258,0.24024 0.21528,0.15767 0.32227,0.37682 0.32227,0.6582 0,0.30806 -0.0984,0.5945 -0.29688,0.86133 -0.1985,0.2644 -0.56672,0.62304 -1.10351,1.07422 -0.25442,0.21588 -0.52982,0.43207 -0.82618,0.65039 l -0.88086,0.65625 v 0.75976 h 4.22852 v -0.62304 h -3.35937 c 0.27678,-0.20376 0.57386,-0.4244 0.89257,-0.66211 0.31872,-0.24015 0.62859,-0.48749 0.92774,-0.74219 0.20968,-0.17708 0.38587,-0.33688 0.53125,-0.48242 0.14817,-0.14554 0.27768,-0.29492 0.38672,-0.44532 0.11742,-0.16009 0.20496,-0.32878 0.26367,-0.50586 0.0615,-0.1795 0.0918,-0.37194 0.0918,-0.57812 0,-0.45846 -0.18148,-0.82106 -0.54493,-1.08789 -0.36345,-0.26925 -0.86562,-0.4043 -1.50586,-0.4043 z m -16.25781,0.004 c -0.74088,0 -1.28724,0.23052 -1.63672,0.6914 -0.34947,0.45846 -0.52343,1.16982 -0.52343,2.13282 0,0.95572 0.17174,1.66412 0.51562,2.125 0.34668,0.46088 0.89526,0.6914 1.64453,0.6914 0.73809,0 1.28139,-0.22803 1.63086,-0.68164 0.35227,-0.45603 0.5293,-1.16987 0.5293,-2.14258 0,-0.94359 -0.17481,-1.64754 -0.52149,-2.11328 -0.34388,-0.46815 -0.8894,-0.70312 -1.63867,-0.70312 z m 5.46875,0 c -0.74088,0 -1.28724,0.23052 -1.63672,0.6914 -0.34947,0.45846 -0.52343,1.16982 -0.52343,2.13282 0,0.95572 0.17174,1.66412 0.51562,2.125 0.34668,0.46088 0.89526,0.6914 1.64453,0.6914 0.73809,0 1.28139,-0.22803 1.63086,-0.68164 0.35227,-0.45603 0.5293,-1.16987 0.5293,-2.14258 0,-0.94359 -0.17481,-1.64754 -0.52149,-2.11328 -0.34388,-0.46815 -0.8894,-0.70312 -1.63867,-0.70312 z m 16.4043,0 c -0.74088,0 -1.28529,0.23052 -1.63477,0.6914 -0.34947,0.45846 -0.52343,1.16982 -0.52343,2.13282 0,0.95572 0.17174,1.66412 0.51562,2.125 0.34668,0.46088 0.89331,0.6914 1.64258,0.6914 0.73808,0 1.28334,-0.22803 1.63281,-0.68164 0.35227,-0.45603 0.52734,-1.16987 0.52734,-2.14258 0,-0.94359 -0.17285,-1.64754 -0.51953,-2.11328 -0.34388,-0.46815 -0.89135,-0.70312 -1.64062,-0.70312 z m -11.04883,0.0918 c -0.0112,0.15767 -0.0554,0.2843 -0.13086,0.3789 -0.0727,0.0922 -0.17413,0.16788 -0.30273,0.22852 -0.10345,0.0485 -0.25574,0.0866 -0.45703,0.11328 -0.2013,0.0243 -0.38832,0.0352 -0.56446,0.0352 v 0.49609 h 1.29883 v 3.63086 h -1.29883 v 0.55273 h 3.37891 v -0.55273 h -1.27539 v -4.88281 z m -10.82422,0.50976 c 0.2656,0 0.48265,0.046 0.65039,0.14063 0.17054,0.0946 0.30449,0.23509 0.40235,0.42187 0.10064,0.1892 0.16762,0.41973 0.20117,0.69141 0.0363,0.27167 0.0547,0.59223 0.0547,0.96093 0,0.37356 -0.0184,0.69412 -0.0547,0.96094 -0.0335,0.2644 -0.0994,0.49493 -0.19727,0.69141 -0.095,0.19163 -0.229,0.33508 -0.40234,0.42969 -0.17334,0.0946 -0.3915,0.14062 -0.6543,0.14062 -0.27958,0 -0.50524,-0.049 -0.67578,-0.14844 -0.16775,-0.0994 -0.29836,-0.24439 -0.39062,-0.43359 -0.10065,-0.20133 -0.16456,-0.4289 -0.19532,-0.68359 -0.0308,-0.2547 -0.0469,-0.57082 -0.0469,-0.94922 0,-0.34445 0.0172,-0.66056 0.0508,-0.94922 0.0363,-0.28866 0.10221,-0.52363 0.19727,-0.70313 0.10064,-0.19163 0.2357,-0.33508 0.40624,-0.42968 0.17334,-0.0946 0.3915,-0.14063 0.6543,-0.14063 z m 5.46875,0 c 0.2656,0 0.48265,0.046 0.65039,0.14063 0.17054,0.0946 0.30449,0.23509 0.40235,0.42187 0.10064,0.1892 0.16762,0.41973 0.20117,0.69141 0.0363,0.27167 0.0547,0.59223 0.0547,0.96093 0,0.37356 -0.0184,0.69412 -0.0547,0.96094 -0.0335,0.2644 -0.0994,0.49493 -0.19727,0.69141 -0.095,0.19163 -0.229,0.33508 -0.40234,0.42969 -0.17334,0.0946 -0.3915,0.14062 -0.6543,0.14062 -0.27958,0 -0.50524,-0.049 -0.67578,-0.14844 -0.16775,-0.0994 -0.29836,-0.24439 -0.39062,-0.43359 -0.10065,-0.20133 -0.16652,-0.4289 -0.19727,-0.68359 -0.0308,-0.2547 -0.0449,-0.57082 -0.0449,-0.94922 0,-0.34445 0.0172,-0.66056 0.0508,-0.94922 0.0363,-0.28866 0.10026,-0.52363 0.19531,-0.70313 0.10065,-0.19163 0.23766,-0.33508 0.40821,-0.42968 0.17333,-0.0946 0.39149,-0.14063 0.65429,-0.14063 z m 16.4043,0 c 0.2656,0 0.48264,0.046 0.65039,0.14063 0.17054,0.0946 0.30449,0.23509 0.40234,0.42187 0.10065,0.1892 0.16763,0.41973 0.20118,0.69141 0.0363,0.27167 0.0547,0.59223 0.0547,0.96093 0,0.37356 -0.0183,0.69412 -0.0547,0.96094 -0.0335,0.2644 -0.0994,0.49493 -0.19727,0.69141 -0.0951,0.19163 -0.22901,0.33508 -0.40234,0.42969 -0.17334,0.0946 -0.3915,0.14062 -0.6543,0.14062 -0.27958,0 -0.50329,-0.049 -0.67383,-0.14844 -0.16775,-0.0994 -0.29836,-0.24439 -0.39062,-0.43359 -0.10065,-0.20133 -0.16652,-0.4289 -0.19727,-0.68359 -0.0308,-0.2547 -0.0469,-0.57082 -0.0469,-0.94922 0,-0.34445 0.0172,-0.66056 0.0508,-0.94922 0.0363,-0.28866 0.10221,-0.52363 0.19726,-0.70313 0.10065,-0.19163 0.23571,-0.33508 0.40625,-0.42968 0.17334,-0.0946 0.3915,-0.14063 0.6543,-0.14063 z"
-   id="class1"
-   inkscape:connector-curvature="0" /><flowRoot
+   style="fill:#2e635e;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
    xml:space="preserve"
-   id="flowRoot5353"
-   style="font-style:normal;font-weight:normal;font-size:13.33333302px;line-height:9.10866165px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-   transform="translate(-23.030769,54.540086)"><flowRegion
-     id="flowRegion5355"
-     style="line-height:9.10866165px"><rect
-       id="rect5357"
-       width="113.71128"
-       height="49.79245"
-       x="560.12305"
-       y="370.14038"
-       style="line-height:9.10866165px" /></flowRegion><flowPara
-     id="flowPara5359"
-     style="font-weight:bold;font-size:8px;line-height:9.10866165px;text-align:center;text-anchor:middle">violent crime density per 100 000 people </flowPara><flowPara
-     style="font-weight:bold;font-size:8px;line-height:9.10866165px;text-align:center;text-anchor:middle"
-     id="flowPara5369">in 2017</flowPara><flowPara
-     style="font-weight:bold;font-size:8px;line-height:9.10866165px;text-align:center;text-anchor:middle"
-     id="flowPara5367">(only selected crimes)</flowPara></flowRoot></g>
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="557.95984"
+   y="483.09457"
+   id="class2-0"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511-9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:ArialMT;-inkscape-font-specification:ArialMT;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="557.95984"
+     y="483.09457">per 100 000 people</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="557.97034"
+   y="492.28671"
+   id="class2-6"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511-0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:ArialMT;-inkscape-font-specification:ArialMT;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="557.97034"
+     y="492.28671">in 2017</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="558.20697"
+   y="500.3302"
+   id="class2-9"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511-4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:ArialMT;-inkscape-font-specification:ArialMT;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="558.20697"
+     y="500.3302">(only selected crimes)</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.9646"
+   y="534.66211"
+   id="class3-4"
+   inkscape:label="#text716-6-8-9-5"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan714-0-7-6-5-5"
+     x="553.9646"
+     y="534.66211"
+     style="font-size:8px;stroke-width:0.93196493">I am class 2</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.49139"
+   y="519.93445"
+   id="class3-8"
+   inkscape:label="#text716-6-8-9-5"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan714-0-7-6-5-0"
+     x="553.49139"
+     y="519.93445"
+     style="font-size:8px;stroke-width:0.93196493">I am class 1</tspan></text>
+</g>
 </g>
 
 <g

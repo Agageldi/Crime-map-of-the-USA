@@ -1,6 +1,7 @@
 var GU_bool = 0
 var cons,cons2
 var class_colors= ["#d8f2ed","#b6d6d1","#97bdb7","#79a39e","#5e8c86","#467872","#2e635e","#154f4a"] //from lightest to darkest or from smallest value to highest value
+class_colors=['#d8f2ed','#b6d5d0','#96b8b3','#769d97','#57827d','#386863','#154f4a']
 //class_colors = ['#f7fcfd','#d5e1e1','#b5c8c6','#95aeac','#769692','#577d79','#376661','#154f4a']
 //class_colors= ['#f7fcfd','#e5f5f9','#ccece6','#99d8c9','#66c2a4',"#467872","#2e635e","#154f4a"] 
 //class_colors = ['#f7fcfd','#e5f5f9','#ccece6','#99d8c9','#66c2a4','#41ae76','#238b45','#005824'] // bright green
@@ -165,7 +166,7 @@ legendSizeNumberUpdate()
 
 
 function recolor(values){
-	var classNum =8
+	var classNum =7
 	var data = new geostats(values)
 	var naturalBreaks = data.getClassJenks(classNum)
 	console.log(naturalBreaks)
@@ -179,17 +180,20 @@ function recolor(values){
 	}
 	
 	
-	var legend = document.getElementsByClassName("classes")
-	if(naturalBreaks[1]==0) document.getElementById("choropleth_legend").style.display = "none"
+	//var legend = document.getElementsByClassName("classes")
+	if(naturalBreaks[1]==0) ;//document.getElementById("choropleth_legend").style.display = "none"
 	else{
-		document.getElementById("choropleth_legend").style.display = "block"
-		for(var j=0;j<legend.length;j++){
+		//document.getElementById("choropleth_legend").style.display = "block"
+		for(var j=0;j<classNum;j++){
 			var a = parseInt(naturalBreaks[classNum-1-j]*10)/10
 			var b = parseInt(naturalBreaks[classNum-j]*10)/10
 			if(a==parseInt(a)) a= a+".0"
 			if(b==parseInt(b)) b= b+".0"
 			
-			legend[j].innerHTML = a+" - "+b
+			if(j>0)
+				document.getElementById("classValue"+(j+1)).innerHTML = a+" - <"+b
+			else
+				document.getElementById("classValue"+(j+1)).innerHTML = a+" - "+b
 		}
 	}
 }
@@ -215,16 +219,16 @@ function popupClose(event){
 function GULegendUpdate(){
 	
 var legend_box = document.getElementById("legend_GU_parts")
-var leg_svg = "<svg class = 'legend_svg0' onwheel='circleResize(event,0)' style='transform:scale("+legendCricleScale[0]+");height:100%;' viewBox='0 0 220 200'>"
-var leg_svg2 = "<svg class = 'legend_svg0' onwheel='circleResize(event,1)' style='transform:scale("+legendCricleScale[1]+");height:100%;' viewBox='0 0 220 200'>"
+var leg_svg = "<svg class = 'legend_svg0' onwheel='circleResize(event,0)' style='cursor:zoom-in;transform:scale("+legendCricleScale[0]+");height:100%;' viewBox='0 0 220 200'>"
+var leg_svg2 = "<svg class = 'legend_svg0' onwheel='circleResize(event,1)' style='cursor:zoom-in;transform:scale("+legendCricleScale[1]+");height:100%;' viewBox='0 0 220 200'>"
 
 if(GU_bool==0){
 	legend_box.style.display = "block"
 	document.getElementById("legend_GU_second").style.display="block"
 	document.getElementById("legend_GU_second_txt").style.display="block"
 
-	var angles = [20,16,10,8]
-	var rightAng = [20,16,10,8,4]
+	var angles = [40,16,10,8]
+	var rightAng = [40,16,10,8,4]
 	angles = checkboxFilter(angles,document.getElementsByClassName("crime_layer"))
 	rightAng = checkboxFilter(rightAng,document.getElementsByClassName("race_layer"))
 	
@@ -301,7 +305,7 @@ function legendSizeNumberUpdate(){
 		if(scale1>document.body.clientHeight/500) scale1 = document.body.clientHeight/500
 		scale1 = Math.pow(scale1,3)
 		
-		document.getElementById('choropleth_legend').style.transform = (scale1/2.5>1)?'scale(1)':'scale('+scale1/2.5+')'
+		//document.getElementById('choropleth_legend').style.transform = (scale1/2.5>1)?'scale(1)':'scale('+scale1/2.5+')'
 		
 		var val=[788/Math.pow(cons,3)/scale1,157644/Math.pow(cons2,3)/scale1]
 		

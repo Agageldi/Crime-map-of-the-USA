@@ -1,1 +1,0 @@
-var graphColor = ['#1b9e77','#d95f02','#ff4c4c','#e7298a','#e0edd2','#e6ab02','#a6761d']

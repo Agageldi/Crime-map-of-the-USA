@@ -16,7 +16,7 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    y="0px"
    viewBox="0 0 650 500"
    xml:space="preserve"
-   sodipodi:docname="1.svg"
+   sodipodi:docname="2.svg"
    width="650"
    height="500"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
@@ -912,7 +912,17 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
      id="SVG_CP_8"><path
        inkscape:connector-curvature="0"
        d="M 0,595.50236 V 0 h 842.25827 v 595.50236 z"
-       id="path1104" /></clipPath></defs><sodipodi:namedview
+       id="path1104" /></clipPath><filter
+     inkscape:collect="always"
+     style="color-interpolation-filters:sRGB"
+     id="filter5423"
+     x="-0.0040615205"
+     width="1.008123"
+     y="-0.011478404"
+     height="1.0229568"><feGaussianBlur
+       inkscape:collect="always"
+       stdDeviation="0.18944508"
+       id="feGaussianBlur5425" /></filter></defs><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -926,15 +936,25 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    id="namedview2264"
    showgrid="false"
    borderlayer="true"
-   inkscape:zoom="1.3463313"
-   inkscape:cx="251.59334"
-   inkscape:cy="225.6495"
-   inkscape:window-x="0"
-   inkscape:window-y="0"
-   inkscape:window-maximized="0"
-   inkscape:current-layer="basemap_svg"
+   inkscape:zoom="3.9363677"
+   inkscape:cx="552.29418"
+   inkscape:cy="63.109991"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g2099"
    inkscape:measure-start="0,0"
-   inkscape:measure-end="0,0" />
+   inkscape:measure-end="0,0"
+   showguides="true"
+   inkscape:guide-bbox="true"><sodipodi:guide
+     position="554,201"
+     orientation="1,0"
+     id="guide710"
+     inkscape:locked="false" /><sodipodi:guide
+     position="330,19"
+     orientation="0,1"
+     id="guide712"
+     inkscape:locked="false" /></sodipodi:namedview>
 <style
    type="text/css"
    id="style2">
@@ -1037,7 +1057,7 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 	
 		.st48{clip-path:url(#SVGID_98_);fill:#B6D6D1;stroke:#000000;stroke-width:0.4801;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st49{clip-path:url(#SVGID_100_);}
-	.st50{font-family:'ArialMT';}
+	.st50{font-family:'Arial, Sans-Serif';}
 	.st51{font-size:6.9612px;}
 	.st52{clip-path:url(#SVGID_102_);}
 	.st53{clip-path:url(#SVGID_104_);}
@@ -1381,9 +1401,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(28.9297,553.0781)"
    class="st50 st130"
    id="text1877"
-   style="font-size:9.84179974px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:9.84179974px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8.00000016px"
      id="tspan1232">0</tspan></text>
+
 
 
 
@@ -1393,7 +1414,7 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 		</g>
 		<g
    id="g1901"
-   transform="translate(3.3515459,7.5735648)">
+   transform="translate(1.3515459,7.5735648)">
 			<g
    id="g1899">
 				<g
@@ -1426,9 +1447,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(58.0156,553.0781)"
    class="st50 st130"
    id="text1893"
-   style="font-size:9.84179974px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:9.84179974px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8px"
      id="tspan1230">500 km</tspan></text>
+
 
 
 
@@ -1707,9 +1729,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(222.5781,556.4375)"
    class="st50 st141"
    id="text2025"
-   style="font-size:10.08180046px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:10.08180046px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8px"
      id="tspan1242">0</tspan></text>
+
 
 
 
@@ -1752,9 +1775,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(287.7813,556.4375)"
    class="st50 st141"
    id="text2041"
-   style="font-size:10.08180046px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:10.08180046px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8px"
      id="tspan1246">500 km</tspan></text>
+
 
 
 
@@ -1798,9 +1822,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(252.4922,556.4375)"
    class="st50 st141"
    id="text2073"
-   style="font-size:10.08180046px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:10.08180046px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8px"
      id="tspan1244">250</tspan></text>
+
 
 
 
@@ -1809,7 +1834,192 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 			</g>
 		</g>
 		
-	</g>
+	<rect
+   id="rect708"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="557.08044"
+   style="fill:#d8f2ed;fill-opacity:1;stroke:#000000;stroke-width:0.62255257;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.42619896px;line-height:1.25;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.2879"
+   y="605.84125"
+   id="class7"
+   inkscape:label="#text716"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue7"
+     x="553.2879"
+     y="605.84125"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+<rect
+   id="rect708-9"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="542.78644"
+   style="fill:#b6d6d1;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.2879"
+   y="590.49548"
+   id="class6"
+   inkscape:label="#text716-6"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue6"
+     x="553.2879"
+     y="590.49548"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+<rect
+   id="rect708-9-0"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="530.16962"
+   style="fill:#97bdb7;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.2879"
+   y="576.95032"
+   id="class5"
+   inkscape:label="#text716-6-8"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue5"
+     x="553.2879"
+     y="576.95032"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+<rect
+   id="rect708-9-0-3"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="517.14819"
+   style="fill:#79a39e;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.2879"
+   y="562.97083"
+   id="class4"
+   inkscape:label="#text716-6-8-9"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue4"
+     x="553.2879"
+     y="562.97083"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+<rect
+   id="rect708-9-0-3-8"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="504.1268"
+   style="fill:#5e8c86;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.2879"
+   y="548.99133"
+   id="class3"
+   inkscape:label="#text716-6-8-9-5"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue3"
+     x="553.2879"
+     y="548.99133"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+<rect
+   id="rect708-9-0-3-8-5"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="491.10544"
+   style="fill:#467872;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="558.07465"
+   y="475.53839"
+   id="class2"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="558.07465"
+     y="475.53839">violent crime density</tspan></text>
+<rect
+   id="rect708-9-0-3-8-5-8"
+   width="20.010746"
+   height="8.6809225"
+   x="567.98401"
+   y="478.08405"
+   style="fill:#2e635e;fill-opacity:1;stroke:#000000;stroke-width:0.62269521;stroke-opacity:1" /><text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="557.95984"
+   y="483.09457"
+   id="class2-0"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511-9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="557.95984"
+     y="483.09457">per 100 000 people</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="557.97034"
+   y="492.28671"
+   id="class2-6"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511-0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="557.97034"
+     y="492.28671">in 2017</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="558.20697"
+   y="500.3302"
+   id="class2-9"
+   inkscape:label="#text716-6-8-9-5-0"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="tspan5511-4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:3.77952766px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;opacity:0.98999999"
+     x="558.20697"
+     y="500.3302">(only selected crimes)</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.9646"
+   y="534.66211"
+   id="class3-4"
+   inkscape:label="#text716-6-8-9-5"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue2"
+     x="553.9646"
+     y="534.66211"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:12.42619896px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.93196493"
+   x="553.49139"
+   y="519.93445"
+   id="class3-8"
+   inkscape:label="#text716-6-8-9-5"
+   transform="scale(1.0735782,0.93146451)"><tspan
+     sodipodi:role="line"
+     id="classValue1"
+     x="553.49139"
+     y="519.93445"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:Arial, Sans-Serif;-inkscape-font-specification:Arial, Sans-Serif;stroke-width:0.93196493">I am class 7</tspan></text>
+</g>
 </g>
 
 <g
@@ -1973,7 +2183,7 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 	</g>
 	<g
    id="g2247"
-   transform="translate(4.7879226,3.9797648)">
+   transform="translate(0.7879226,3.9797648)">
 		<g
    id="g2229">
 			<g
@@ -2008,9 +2218,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(175.8828,556.6719)"
    class="st50 st130"
    id="text2221"
-   style="font-size:9.84179974px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:9.84179974px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8px"
      id="tspan1238">250 km</tspan></text>
+
 
 
 
@@ -2046,9 +2257,10 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    transform="translate(175.8828,556.6719)"
    class="st50 st130"
    id="text2221-7"
-   style="font-size:9.84179974px;font-family:ArialMT"><tspan
-     style="font-size:5.33333349px"
+   style="font-size:9.84179974px;font-family:Arial, Sans-Serif"><tspan
+     style="font-size:8px"
      id="tspan1238-1">0</tspan></text>
+
 
 </g></g></g></g></g></g>
 <g
@@ -2450,4 +2662,5 @@ var mySvg_map = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
        clip-path="url(#SVG_CP_8)"
        stroke-miterlimit="10"
        d="M 161.06868,570.82176 V 465.44298 h 54.72974 v 105.37878 z"
-       id="path1107" /></g></g>`
+       id="path1107" /></g></g>
+	   `

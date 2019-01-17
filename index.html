@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html style="margin:0px;padding:0px;height:100%;width:100%">
   <head>
-    <title>Violent Crime in USA 2013-2017</title>
+    <title>saag1011</title>
 	
-	<link rel="stylesheet" href="libs/leaflet-style.css"/>
-	
-	<script type="text/javascript" src="libs/leaflet-js.js"> </script>
-	<script type="text/javascript" src="libs/jquery.min.js"> </script>
 	<script type="text/javascript" src="libs/geostats.min.js"> </script>
 	
 	<script type="text/javascript" src="scripts/svg.js"> </script>
@@ -51,6 +47,7 @@
 		width: 50px; 
 		color:#333; 
 		font-size:8px;
+		display:none;
 	}
 	.classes::after{
 		content:"";
@@ -64,22 +61,21 @@
 		border-width:1px;
 	}
 	#class1:after{ background-color: #154f4a;}
-	#class2:after{ background-color: #2e635e;}
-	#class3:after{ background-color: #467872;}
-	#class4:after{ background-color: #5e8c86;}
-	#class5:after{ background-color: #79a39e;}
-	#class6:after{ background-color: #97bdb7;}
-	#class7:after{ background-color: #b6d6d1;}
-	#class8:after{ background-color: #d8f2ed;}
+	#class2:after{ background-color: #386863;}
+	#class3:after{ background-color: #57827d;}
+	#class4:after{ background-color: #769d97;}
+	#class5:after{ background-color: #96b8b3;}
+	#class6:after{ background-color: #b6d5d0;}
+	#class7:after{ background-color: #d8f2ed;}
 	
   </style>
     <div id = "mapbox" style = "background-color: #f7fbfd;height:100%;width:70%;margin:0px; padding:0px; position: relative; float:left;">
 		<div id="mapid" style = "background-color: #f7fbfd;height:100%;width:100%;margin:0px; padding:0px; position: relative; float:left;">
 		</div>
 		<div id="year_slider_box" style = "top:15px;right:30px;position: absolute;height:10px;width:100px;margin:0px; padding:0px; ">
-			<div id="play_year"  style="transform:translateX(-100%);left:-15px;height:15px; background-color:transparent;width:50px;color:black;position:absolute;">2017</div>
+			<div id="play_year"  style="transform:translateX(-100%);left:-10px;height:15px; background-color:transparent;color:black;position:absolute;">2017</div>
 			<!--div id="play_button" onclick="play(event)" style="cursor:pointer;left:-30px;height:15px; background-color:transparent;width:50px;color:black;position:absolute;">►</div-->
-			<input oninput="GUchange(event)" id="year_slider" type="range" min="2013" max="2017" value="2017" style = "height:100%;width:100%;margin:0px; padding:0px; ">
+			<input oninput="GUchange(event)" id="year_slider" type="range" min="2013" max="2017" value="2017" style = "z-index:100;height:100%;width:100%;margin:0px; padding:0px; ">
 		</div>
 <script>
 function play(e){
@@ -100,7 +96,7 @@ function play(e){
 	}
 }
 </script>
-		<div id="choropleth_legend" style="transform:scale(1);right:40px;bottom:40px;position:absolute;height:180px;width:50px">
+		<!--div id="choropleth_legend" style="transform:scale(1);right:40px;bottom:40px;position:absolute;height:180px;width:50px">
 			<div class="classes" id="class1">121-200</div>
 			<div class="classes" id="class2">121-200</div>
 			<div class="classes" id="class3">121-200</div>
@@ -108,14 +104,13 @@ function play(e){
 			<div class="classes" id="class5">121-200</div>
 			<div class="classes" id="class6">121-200</div>
 			<div class="classes" id="class7">121-200</div>
-			<div class="classes" id="class8">121-200</div>
-		</div>
+		</div-->
 
 	</div>
 		
 	<div id="box" style = "height:100%;width:30%;background-color: #333;position: relative; float:left;">
 		<div style = "margin-top:10px;margin-bottom:10px;font-size:20px;text-align:center;height:40px;width:100%;background-color: #333;position: relative; float:left;">
-			Violent Crime in USA 2013-2017
+			Violent Crime in the USA 2013-2017
 		</div>
 		<div class = "box_part" id="GU_part"  style="position: relative;">
 			<div class = "button" id="button2" onclick="GUchange(event)" style="background-image: url('./images/map.png');background-size: cover; left:5%;width:40px;height:40px;position: relative;float:left;"></div>
@@ -153,7 +148,9 @@ function play(e){
 				}
 				
 				</style>
-		<div id="legend_GU_parts" style="margin-top:20px; color:black;height:80px;left:5%;width:90%;position: relative; float:left; margin-right:5%;">
+		<div id="legend_GU_parts" style="padding-top:30px;margin-top:10px; color:black;height:80px;left:5%;width:90%;position: relative; float:left; margin-right:5%;">
+			<p style="position: absolute; top:-10px; color:white;">%Violent crime legend title%</p>
+				
 			<div id="legend_GU_first" style=" color:black;height:100%;width:35%;position: relative; float:left;">
 			</div>
 			<div id="legend_GU_first_txt" style=" color:black;height:100%; width:50%;position: relative; float:left;">
@@ -163,23 +160,24 @@ function play(e){
 				<div class = "crime_sphere" style="background-color:#0f5a27;"><p>Murder</p></div>
 
 			</div>
-			<div  style="font-size:10px; position: absolute; top:80px;"><span class = "size_txt2">2000</span> crime</div>
-			<div  style="font-size:10px; position: absolute; top:90px;transform: translate(0%,0%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
+			<div  style="font-size:10px; position: absolute; top:110px;"><span class = "size_txt2">2000</span> crimes</div>
+			<div  style="font-size:10px; position: absolute; top:120px;transform: translate(0%,0%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
 			
 			
 			
 			
-			<div id="legend_GU_second_txt" style=" border-color:#c0c0c0;border-width:1px 0px 0px 0px;border-style:solid;margin-top:30px;color:black;height:100%; width:70%;position: relative; float:left;">
+			<div id="legend_GU_second_txt" style="padding-top:30px; border-color:#c0c0c0;border-width:1px 0px 0px 0px;border-style:solid;margin-top:30px;color:black;height:100%; width:70%;position: relative; float:left;">
+				<p style="position: absolute; top:0px; color:white;">%Violent crime legend title%</p>
 				<div class = "race_sphere" style="background-color:#fb8072;"><p>White</p></div>
 				<div class = "race_sphere" style="background-color:#bebada;"><p>Black or African American</p></div>
 				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Native American</p></div>
 				<div class = "race_sphere" style="background-color:#ffffb3;"><p>Asian</p></div>
 				<div class = "race_sphere" style="background-color:#0f5a27;"><p>Two or More Races</p></div>
 				
-				<div  style="font-size:10px; position: absolute; right:0px; top:70px;transform: translate(100%,100%);"><span class = "size_txt2">2000</span> people</div>
-				<div  style="font-size:10px; position: absolute; right:0px; top:80px;transform: translate(100%,100%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
+				<div  style="font-size:10px; position: absolute; right:0px; top:100px;transform: translate(100%,100%);"><span class = "size_txt2">2000</span> people</div>
+				<div  style="font-size:10px; position: absolute; right:0px; top:110px;transform: translate(100%,100%);">1 mm<sup>3</sup> &#x2259; <span class = "size_txt"></span></div>
 			</div>
-			<div id="legend_GU_second" style=" margin-top:30px;color:black;height:100%;width:20%;position: relative; float:left;">
+			<div id="legend_GU_second" style="padding-top:30px; margin-top:30px;color:black;height:100%;width:20%;position: relative; float:left;">
 			</div>
 			
 			
