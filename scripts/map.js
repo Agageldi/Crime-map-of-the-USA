@@ -179,16 +179,20 @@ function recolor(values){
 		document.getElementById(state[i]).style.fill = class_colors[j-1]
 	}
 	
-	
+	if(GU_bool==2) document.getElementById("show_lines").style.display = "none"
+	else document.getElementById("show_lines").style.display = "block"
 	//var legend = document.getElementsByClassName("classes")
-	if(naturalBreaks[1]==0) ;//document.getElementById("choropleth_legend").style.display = "none"
+	if(naturalBreaks[1]==0) {
+		document.getElementById("choropleth_legend").style.display = "none"
+		
+	}
 	else{
-		//document.getElementById("choropleth_legend").style.display = "block"
+		document.getElementById("choropleth_legend").style.display = "block"
 		for(var j=0;j<classNum;j++){
-			var a = parseInt(naturalBreaks[classNum-1-j]*10)/10
-			var b = parseInt(naturalBreaks[classNum-j]*10)/10
-			if(a==parseInt(a)) a= a+".0"
-			if(b==parseInt(b)) b= b+".0"
+			var a = parseInt(naturalBreaks[classNum-1-j])
+			var b = parseInt(naturalBreaks[classNum-j])
+			if(a==parseInt(a)) a= a+""
+			if(b==parseInt(b)) b= b+""
 			
 			if(j>0)
 				document.getElementById("classValue"+(j+1)).innerHTML = a+" - <"+b
