@@ -111,21 +111,22 @@ for(var i=0;i<state.length;i++){
 	
 	sum = rightAngles[0]+ rightAngles[1]+ rightAngles[2]+ rightAngles[3]+ rightAngles[4]
 	
-	
-	// 1mm3 = 100 Voilent Crime
-	// 1px3 = 9.2546
-	var f = Math.pow(1039/50*3/4/Math.PI,1/3)*594/21000*cons
-	r=Math.pow(Tvoilent/1039,1/3)*f*100*25.4/getDPI()
-	
-	
 	var scale1=document.body.clientWidth/650*.7
 	if(scale1>document.body.clientHeight/500) scale1 = document.body.clientHeight/500
 	
-	// 1mm3 = 20 000 people
-	// 1px3 = 1850.9179
+	
+	// 1mm3 = 238.5 Voilent Crime
+	// 1px3 =
+	var f = Math.pow(1039/50*3/4/Math.PI,1/3)*594/21000*cons
+	r=Math.pow(Tvoilent/1039,1/3)*f*100*25.4/getDPI()
+	console.log(state[i]+"  1mm3  ->"+Tvoilent/(Math.pow(r,3)*Math.PI*2/3))
+	
+	
+
+	// 1mm3 = 47713 people
+	// 1px3 = 
 	var f2 = Math.pow(579315/10000*3/4/Math.PI,1/3)*594/21000*cons2
 	r= Math.pow(sum/579315,1/3)*f2*100 *25.4/getDPI()
-	console.log(state[i]+"  1px3  ->"+sum/Math.pow(r*scale1,3)*2)
 	
 	
 	if(Tvoilent==0) continue;
@@ -311,11 +312,11 @@ function legendSizeNumberUpdate(){
 		
 		//document.getElementById('choropleth_legend').style.transform = (scale1/2.5>1)?'scale(1)':'scale('+scale1/2.5+')'
 		
-		var val=[788/Math.pow(cons,3)/scale1,157644/Math.pow(cons2,3)/scale1]
+		var val=[238.5/Math.pow(cons,3)/scale1,47713/Math.pow(cons2,3)/scale1]
 		
 		for(var i=0;i<leg.length;i++){
 			var a =Math.round(val[i])
-			if(GU_bool==0) a = Math.round(a*2)
+			if(GU_bool==1) a = Math.round(a/2)
 			var str = ""
 			x=0;
 			while(a>0){
@@ -332,7 +333,7 @@ function legendSizeNumberUpdate(){
 		var scale_legend
 		var r=40*200/220.*25.4/DPI
 		for(var i=0;i<leg.length;i++){
-			var a= Math.round(val[i]*Math.pow(r*legendCricleScale[i],3))
+			var a= Math.round(val[i]*Math.pow(r*legendCricleScale[i],3)*Math.PI*2/3)
 			var str = ""
 			x=0;
 			while(a>0){
